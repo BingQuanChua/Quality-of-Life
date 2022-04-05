@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>US Choropleth Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  </head>
+  <body>
+    <h2 id="title">💝Health Related Quality of Life</h2>
+    <div id="description">
+      Category
+    </div>
+    <select id="selection">
+      <option>Hello</option>
+      <option>How are you</option>
+    </select>
+
+    <svg id="canvas">
+
+    </svg>
+
+    <script>
+      
+      let canvas = d3.select("#canvas")
+
+      // div for the tooltip
+      var tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .attr("id", "tooltip")
+        .style("opacity", 0);
+
+      let drawMap = () => {
+
+        canvas.selectAll('path')
+              .data(stateData)
+              .enter()
+              .append('path')
+              .attr('d', d3.geoPath())
+              .attr('class', 'state')
+              .on('mouseover', (event, stateDataItem) => {
+                tooltip.transition()
+                      .style('visibility', 'visible')
+                      .style("opacity", 0.95)
+                      .style("left", event.pageX + 10 + "px")
+                      .style("top", event.pageY - 28 + "px");
+
+                let statename = stateDataItem['properties']['name'];
+                tooltip.text("Greetings from " + statename + " !");
+              })
+              .on('mouseout', (event, stateDataItem) => {
+                tooltip.transition()
+                      .style('visibility', 'hidden')
+              })
+              .attr('state', (stateDataItem) => {
+                return stateDataItem['properties']['name'];
+              })
+      }
+
+      let countyData // data for drawing counties
+      let stateData // data for drawing states
+      let healthData
+
+      // loading data
+      d3.json("dataset/topojson/counties-albers-10m.json").then(
+        (data, error) => {
+          if(error){
+            console.log(log);
+          }else{
+            // converts topojson into geojson format
+            countyData = topojson.feature(data, data.objects.counties).features;
+            stateData = topojson.feature(data, data.objects.states).features;          
+
+            drawMap();
+
+            // d3.csv("dataset/health-related-quality-of-life/rows.csv").then(
+            //   (data, error) => {
+            //     if(error){
+            //       console.log(log);
+            //     }else{
+            //       healthData = data;
+            //       console.log(healthData);
+            //       drawMap();
+            //     }
+            //   }
+            // )
+          }
+        }
+      )
+      
+      
+      
+
+    </script>
+  </body>
+</html>
