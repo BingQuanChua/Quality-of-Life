@@ -1,2 +1,6 @@
+# folders to be ignored
 .ipynb_checkpoints
 tests/
+
+# files to be ignored
+*.ipynb
