@@ -98,7 +98,6 @@
           .on("mouseout", function (event, stateDataItem) {
             tooltip.transition().style("visibility", "hidden");
           })
-          // not binding for some reason :(
           .attr("fill", function (stateDataItem) {
             let statename = stateDataItem["properties"]["name"];
             let value = healthDataSubset.find(function (item) {
@@ -149,7 +148,7 @@
           console.log(log);
         } else {
           // converts topojson into geojson format
-          countyData = topojson.feature(data, data.objects.counties).features;
+          // countyData = topojson.feature(data, data.objects.counties).features;
           stateData = topojson.feature(data, data.objects.states).features;
 
           d3.csv("dataset/health-related-quality-of-life/rows.csv").then(
@@ -184,9 +183,6 @@
         d3.selectAll("path").remove();
         // const selectedOption = d3.select(this).property("value");
         selectedQuestion = document.getElementById("qSelection").value;
-
-        // console.log(selectedYear);
-        // console.log(selectedQuestion);
 
         healthDataSubset = healthData.filter(function (item) {
           return (
@@ -238,6 +234,7 @@
         colorScale = d3.scaleThreshold().domain(domain).range(range);
         console.log(domain)
       }
+      
     </script>
   </body>
 </html>
