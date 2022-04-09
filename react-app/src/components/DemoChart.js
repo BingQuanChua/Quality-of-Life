@@ -15,7 +15,7 @@ const data = [
   { name: "E", uv: 100, pv: 2400, amt: 2400 },
 ];
 
-const renderLineChart = () => {
+export default function renderLineChart() {
   return (
     <LineChart
       width={400}
@@ -31,5 +31,3 @@ const renderLineChart = () => {
     </LineChart>
   );
 };
-
-export default renderLineChart;

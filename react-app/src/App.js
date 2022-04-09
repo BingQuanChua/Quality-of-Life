@@ -1,12 +1,12 @@
-
 import React from 'react';
-import DemoChart from './components/DemoChart';
+
+import Tabs from './components/Tabs';
 
 function App() {
   return (
     <div className="App">
       <div>
-        <DemoChart/>
+        <Tabs/>
       </div>
     </div>
   );
