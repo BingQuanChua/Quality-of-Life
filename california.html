@@ -160,7 +160,9 @@
           .enter()
           .append("path")
           .attr("d", d3.geoPath())
+          .attr("transform", "translate(350,-300) scale(2.2,2.2)")
           .attr("class", "state")
+          .attr("stroke-width", "200") // not working? :(
           .on("mouseover", function (event, countyDataItem) {
             tooltip
               .transition()
@@ -175,12 +177,17 @@
             });
             let count = countyObj["Count"];
             let population = countyObj["Population"];
-            tooltip.text(countyname + " - " + count + " - " + population);
+            let rate = countyObj["Rate"]
+            tooltip.html(
+              `<strong>${countyname}</strong>` + 
+              `<div>Count: ${count}</div>` +
+              `<div>Population: ${population}</div>` +
+              `<div>Rate: ${rate} (per 100k population) </div>`
+            );
           })
           .on("mouseout", function (event, countyDataItem) {
             tooltip.transition().style("visibility", "hidden");
           })
-          // not binding for some reason :(
           .attr("fill", function (countyDataItem) {
             let countyname = countyDataItem["properties"]["name"];
             let countyObj = diseaseDataSubset.find(function (item) {

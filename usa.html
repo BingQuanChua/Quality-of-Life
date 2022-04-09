@@ -83,17 +83,15 @@
               .style("top", event.pageY - 28 + "px");
 
             let statename = stateDataItem["properties"]["name"];
-            let value = healthDataSubset.find(function (item) {
+            let object = healthDataSubset.find(function (item) {
               return item["LocationDesc"] === statename;
-            })["Data_Value"];
-            tooltip.text(
-              "Greetings from " +
-                statename +
-                " ! " +
-                selectedQuestion +
-                ": " +
-                value
-            );
+            });
+            let value = object["Data_Value"];
+            let unit = object["Data_Value_Unit"];
+            tooltip.html(
+              `<strong>${statename}</strong>` + 
+              `<div>${selectedQuestion}: ${value} ${unit}</div>`
+            ); 
           })
           .on("mouseout", function (event, stateDataItem) {
             tooltip.transition().style("visibility", "hidden");
@@ -134,8 +132,10 @@
 
       let countyData; // data for drawing counties
       let stateData; // data for drawing states
+
       let healthData; // quality of life csv data
       let healthDataSubset; // subset of health data
+
       let selectedQuestion; // selected question type
       let selectedYear; // selected year
 
@@ -181,7 +181,6 @@
       // drop down selection (question)
       d3.select("#qSelection").on("change", function (event, d) {
         d3.selectAll("path").remove();
-        // const selectedOption = d3.select(this).property("value");
         selectedQuestion = document.getElementById("qSelection").value;
 
         healthDataSubset = healthData.filter(function (item) {
@@ -199,7 +198,6 @@
       // drop down selection (year)
       d3.select("#yearSelection").on("change", function (event, d) {
         d3.selectAll("path").remove();
-        // const selectedOption = d3.select(this).property("value");
         selectedYear = document.getElementById("yearSelection").value;
 
         healthDataSubset = healthData.filter(function (item) {
