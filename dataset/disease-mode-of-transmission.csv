@@ -1,0 +1,66 @@
+Disease,Mode_of_Transmission(s)
+Amebiasis,"Ingestion, Sexual contact"
+Anaplasmosis and Ehrlichiosis,Tick-borne
+Babesiosis,Ingestion
+Cholera,Ingestion
+"Botulism, Other",Vertical transmission
+"Botulism, Foodborne",Ingestion
+"Botulism, Wound",Blood
+Brucellosis,"Airborne, Ingestion"
+Campylobacteriosis,Ingestion
+Chlamydia,Sexual contact
+Ciguatera Fish Poisoning,Ingestion
+Dengue,Arthropod-borne
+Coccidioidomycosis,Airborne
+Creutzfeldt-Jakob Disease and other Transmissible Spongiform Encephalopathies,Ingestion
+Cryptosporidiosis,Ingestion
+Cyclosporiasis,Ingestion
+Cysticercosis or Taeniasis,Ingestion
+E. coli O157,Ingestion
+Diphtheria,Airborne
+HIV,"Blood, Sexual contact, Vertical transmission"
+Early Syphilis,Sexual contact
+Gonorrhea,Sexual contact
+E. coli Other STEC (non-O157),Ingestion
+Giardiasis,Ingestion
+Hantavirus Infection,Airborne
+"Hepatitis B, Acute","Blood, Sexual contact, Vertical transmission"
+"Hepatitis E, acute infection",Ingestion
+Hemolytic Uremic Syndrome,Ingestion
+Hepatitis A,Ingestion
+Scombroid Fish Poisoning,Ingestion
+"Hepatitis C, Acute","Blood, Sexual contact, Vertical transmission"
+Invasive Meningococcal Disease,Airborne
+Leprosy,Airborne
+Measles,Airborne
+Leptospirosis,Ingestion
+Influenza Death (<65 years of age),Airborne
+Legionellosis,Ingestion
+Malaria,Arthropod-borne
+Lyme Disease,Tick-borne
+Listeriosis,Ingestion
+Pertussis,Airborne
+Paralytic Shellfish Poisoning,Ingestion
+Psittacosis,Ingestion
+"Rabies, human",Ingestion
+Mumps,Airborne
+Q Fever,Ingestion
+Relapsing Fever,Tick-borne
+"Plague, human",Arthropod-borne
+Rubella,Airborne
+Salmonellosis,Ingestion
+Tetanus,Blood
+Shiga Toxin Positive Feces (without culture confirmation),Ingestion
+Shigellosis,"Ingestion, Sexual contact"
+Spotted Fever Rickettsiosis,"Ingestion, Tick-borne"
+Staphylococcus aureus Infection (cases resulting in death or ICU),Direct contact
+Streptococcal Infection (cases in food and dairy workers),Direct contact
+Tuberculosis,Airborne
+Toxic Shock Syndrome (Non-Streptococcal),Bacterial infection
+Vibrio Infection (non-Cholera),Ingestion
+Trichinosis,Ingestion
+Tularemia,Ingestion
+"Typhoid Fever, case",Ingestion
+Varicella Hospitalizations,"Direct contact, Airborne"
+Typhus Fever,Arthropod-borne
+Yersiniosis,Ingestion
