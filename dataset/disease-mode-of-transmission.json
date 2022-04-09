@@ -1,0 +1,338 @@
+{
+    "Amebiasis": {
+        "mode": [
+            "Ingestion",
+            "Sexual contact"
+        ]
+    },
+    "Anaplasmosis and Ehrlichiosis": {
+        "mode": [
+            "Tick-borne"
+        ]
+    },
+    "Babesiosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Cholera": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Botulism, Other": {
+        "mode": [
+            "Vertical transmission"
+        ]
+    },
+    "Botulism, Foodborne": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Botulism, Wound": {
+        "mode": [
+            "Blood"
+        ]
+    },
+    "Brucellosis": {
+        "mode": [
+            "Airborne",
+            "Ingestion"
+        ]
+    },
+    "Campylobacteriosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Chlamydia": {
+        "mode": [
+            "Sexual contact"
+        ]
+    },
+    "Ciguatera Fish Poisoning": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Dengue": {
+        "mode": [
+            "Arthropod-borne"
+        ]
+    },
+    "Coccidioidomycosis": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Creutzfeldt-Jakob Disease and other Transmissible Spongiform Encephalopathies": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Cryptosporidiosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Cyclosporiasis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Cysticercosis or Taeniasis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "E. coli O157": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Diphtheria": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "HIV": {
+        "mode": [
+            "Blood",
+            "Sexual contact",
+            "Vertical transmission"
+        ]
+    },
+    "Early Syphilis": {
+        "mode": [
+            "Sexual contact"
+        ]
+    },
+    "Gonorrhea": {
+        "mode": [
+            "Sexual contact"
+        ]
+    },
+    "E. coli Other STEC (non-O157)": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Giardiasis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Hantavirus Infection": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Hepatitis B, Acute": {
+        "mode": [
+            "Blood",
+            "Sexual contact",
+            "Vertical transmission"
+        ]
+    },
+    "Hepatitis E, acute infection": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Hemolytic Uremic Syndrome": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Hepatitis A": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Scombroid Fish Poisoning": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Hepatitis C, Acute": {
+        "mode": [
+            "Blood",
+            "Sexual contact",
+            "Vertical transmission"
+        ]
+    },
+    "Invasive Meningococcal Disease": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Leprosy": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Measles": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Leptospirosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Influenza Death (<65 years of age)": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Legionellosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Malaria": {
+        "mode": [
+            "Arthropod-borne"
+        ]
+    },
+    "Lyme Disease": {
+        "mode": [
+            "Tick-borne"
+        ]
+    },
+    "Listeriosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Pertussis": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Paralytic Shellfish Poisoning": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Psittacosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Rabies, human": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Mumps": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Q Fever": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Relapsing Fever": {
+        "mode": [
+            "Tick-borne"
+        ]
+    },
+    "Plague, human": {
+        "mode": [
+            "Arthropod-borne"
+        ]
+    },
+    "Rubella": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Salmonellosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Tetanus": {
+        "mode": [
+            "Blood"
+        ]
+    },
+    "Shiga Toxin Positive Feces (without culture confirmation)": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Shigellosis": {
+        "mode": [
+            "Ingestion",
+            "Sexual contact"
+        ]
+    },
+    "Spotted Fever Rickettsiosis": {
+        "mode": [
+            "Ingestion",
+            "Tick-borne"
+        ]
+    },
+    "Staphylococcus aureus Infection (cases resulting in death or ICU)": {
+        "mode": [
+            "Direct contact"
+        ]
+    },
+    "Streptococcal Infection (cases in food and dairy workers)": {
+        "mode": [
+            "Direct contact"
+        ]
+    },
+    "Tuberculosis": {
+        "mode": [
+            "Airborne"
+        ]
+    },
+    "Toxic Shock Syndrome (Non-Streptococcal)": {
+        "mode": [
+            "Bacterial infection"
+        ]
+    },
+    "Vibrio Infection (non-Cholera)": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Trichinosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Tularemia": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Typhoid Fever, case": {
+        "mode": [
+            "Ingestion"
+        ]
+    },
+    "Varicella Hospitalizations": {
+        "mode": [
+            "Airborne",
+            "Direct contact"
+        ]
+    },
+    "Typhus Fever": {
+        "mode": [
+            "Arthropod-borne"
+        ]
+    },
+    "Yersiniosis": {
+        "mode": [
+            "Ingestion"
+        ]
+    }
+}

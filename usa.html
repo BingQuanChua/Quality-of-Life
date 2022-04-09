@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>US Choropleth Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+  </head>
+  <body>
+    <h2 id="title">💝Health Related Quality of Life</h2>
+    <div id="description">Question</div>
+    <select id="qSelection">
+      <option>Mean days of activity limitation</option>
+      <option>Mean mentally unhealthy days</option>
+      <option>Mean physically or mentally unhealthy days</option>
+      <option>Mean physically unhealthy days</option>
+      <option>Percentage with 14 or more activity limitation days</option>
+      <option>
+        Percentage with 14 or more mentally unhealthy days (Frequent Mental
+        Distress)
+      </option>
+      <option>Percentage with 14 or more physically unhealthy days</option>
+      <option>Percentage with fair or poor self-rated health</option>
+    </select>
+    Year
+    <select id="yearSelection">
+      <option>2010</option>
+      <option>2009</option>
+      <option>2008</option>
+      <option>2007</option>
+      <option>2006</option>
+      <option>2005</option>
+      <option>2004</option>
+      <option>2003</option>
+      <option>2002</option>
+      <option>2001</option>
+      <option>2000</option>
+      <option>1999</option>
+      <option>1998</option>
+      <option>1997</option>
+      <option>1996</option>
+      <option>1995</option>
+      <option>1994</option>
+      <option>1993</option>
+    </select>
+    <svg id="canvas"></svg>
+    <svg id="legends"></svg>
+    <script>
+      let canvas = d3.select("#canvas");
+      let legends = d3.select("#legends");
+
+      // color
+      var domain = [1, 2, 3, 4, 5];
+      var labels = ["", "", "", "", ""];
+      var range = ["#84a6df", "#5084cc", "#3e67bf", "#404eb8", "#393196"];
+      var colorScale = d3.scaleThreshold().domain(domain).range(range);
+
+      // div for the tooltip
+      var tooltip = d3
+        .select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .attr("id", "tooltip")
+        .style("opacity", 0);
+
+      function drawMap() {
+        canvas
+          .selectAll("path")
+          .data(stateData)
+          .enter()
+          .append("path")
+          .attr("d", d3.geoPath())
+          .attr("class", "state")
+          .on("mouseover", function (event, stateDataItem) {
+            tooltip
+              .transition()
+              .style("visibility", "visible")
+              .style("opacity", 0.95)
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY - 28 + "px");
+
+            let statename = stateDataItem["properties"]["name"];
+            let object = healthDataSubset.find(function (item) {
+              return item["LocationDesc"] === statename;
+            });
+            let value = object["Data_Value"];
+            let unit = object["Data_Value_Unit"];
+            tooltip.html(
+              `<strong>${statename}</strong>` + 
+              `<div>${selectedQuestion}: ${value} ${unit}</div>`
+            ); 
+          })
+          .on("mouseout", function (event, stateDataItem) {
+            tooltip.transition().style("visibility", "hidden");
+          })
+          .attr("fill", function (stateDataItem) {
+            let statename = stateDataItem["properties"]["name"];
+            let value = healthDataSubset.find(function (item) {
+              return item["LocationDesc"] === statename;
+            })["Data_Value"];
+            return colorScale(value);
+          })
+          .attr("state", function (stateDataItem) {
+            return stateDataItem["properties"]["name"];
+          })
+          .attr("value", function (stateDataItem) {
+            let statename = stateDataItem["properties"]["name"];
+            let value = healthDataSubset.find(function (item) {
+              return item["LocationDesc"] === statename;
+            })["Data_Value"];
+            return value;
+          });
+      }
+
+      // legend
+      legends
+        .append("g")
+        .attr("class", "legend")
+        // .attr("transform", "translate(" + 50 + "," + 30 + ")");
+        .attr("transform", "translate(100,100), rotate(-90)");
+
+      var legend = d3
+        .legendColor()
+        .labels(labels)
+        // .title("Value")
+        .scale(colorScale);
+
+      legends.select(".legend").call(legend);
+
+      let countyData; // data for drawing counties
+      let stateData; // data for drawing states
+
+      let healthData; // quality of life csv data
+      let healthDataSubset; // subset of health data
+
+      let selectedQuestion; // selected question type
+      let selectedYear; // selected year
+
+      // loading data
+      d3.json("dataset/topojson/counties-albers-10m.json").then(function (
+        data,
+        error
+      ) {
+        if (error) {
+          console.log(log);
+        } else {
+          // converts topojson into geojson format
+          // countyData = topojson.feature(data, data.objects.counties).features;
+          stateData = topojson.feature(data, data.objects.states).features;
+
+          d3.csv("dataset/health-related-quality-of-life/rows.csv").then(
+            function (data, error) {
+              if (error) {
+                console.log(log);
+              } else {
+                healthData = data;
+
+                // initial state
+                selectedQuestion = "Mean days of activity limitation";
+                selectedYear = "2010";
+
+                healthDataSubset = healthData.filter(function (item) {
+                  return (
+                    item["Question"] === selectedQuestion &&
+                    item["Break_Out_Category"] === "Overall" &&
+                    item["Year"] === selectedYear
+                  );
+                });
+
+                setNewColorScale();
+                drawMap();
+              }
+            }
+          );
+        }
+      });
+
+      // drop down selection (question)
+      d3.select("#qSelection").on("change", function (event, d) {
+        d3.selectAll("path").remove();
+        selectedQuestion = document.getElementById("qSelection").value;
+
+        healthDataSubset = healthData.filter(function (item) {
+          return (
+            item["Question"] === selectedQuestion &&
+            item["Break_Out_Category"] === "Overall" &&
+            item["Year"] === selectedYear
+          );
+        });
+
+        setNewColorScale();
+        drawMap();
+      });
+
+      // drop down selection (year)
+      d3.select("#yearSelection").on("change", function (event, d) {
+        d3.selectAll("path").remove();
+        selectedYear = document.getElementById("yearSelection").value;
+
+        healthDataSubset = healthData.filter(function (item) {
+          return (
+            item["Question"] === selectedQuestion &&
+            item["Break_Out_Category"] === "Overall" &&
+            item["Year"] === selectedYear
+          );
+        });
+
+        setNewColorScale();
+        drawMap();
+      });
+
+      function setNewColorScale() {
+        let min = 0;
+        let max = d3.max(
+          healthDataSubset.map(function (d) {
+            return +d.Data_Value;
+          })
+        );
+        let mid = (min + max) / 2;
+        let mid25 = (min + mid) / 2;
+        let mid75 = (mid + max) / 2;
+        domain = [min, mid25, mid, mid75, max];
+        // range = [];
+
+        // for (var i=0; i < domain.length; i++) {
+        //   range.push(domain[i].toString());
+        // }
+
+        colorScale = d3.scaleThreshold().domain(domain).range(range);
+        console.log(domain)
+      }
+      
+    </script>
+  </body>
+</html>
