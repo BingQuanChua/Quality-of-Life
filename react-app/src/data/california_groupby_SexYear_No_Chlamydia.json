@@ -1,0 +1,2738 @@
+{
+  "Female": [
+    {
+      "Year": 2001,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.6,
+        "Sample_Size": 2504.0,
+        "Low_Confidence_Limit": 2.2,
+        "High_Confidence_Limit": 3.1,
+        "Count": 415.6078431373,
+        "Population": 17340743.0,
+        "Rate": 2.396745098,
+        "CI.lower": 2.2852156863,
+        "CI.upper": 2.5268823529
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 4.1,
+        "Sample_Size": 2504.0,
+        "Low_Confidence_Limit": 3.7,
+        "High_Confidence_Limit": 4.5,
+        "Count": 415.6078431373,
+        "Population": 17340743.0,
+        "Rate": 2.396745098,
+        "CI.lower": 2.2852156863,
+        "CI.upper": 2.5268823529
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.4,
+        "Sample_Size": 2504.0,
+        "Low_Confidence_Limit": 6.8,
+        "High_Confidence_Limit": 7.9,
+        "Count": 415.6078431373,
+        "Population": 17340743.0,
+        "Rate": 2.396745098,
+        "CI.lower": 2.2852156863,
+        "CI.upper": 2.5268823529
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 4.2,
+        "Sample_Size": 2504.0,
+        "Low_Confidence_Limit": 3.7,
+        "High_Confidence_Limit": 4.7,
+        "Count": 415.6078431373,
+        "Population": 17340743.0,
+        "Rate": 2.396745098,
+        "CI.lower": 2.2852156863,
+        "CI.upper": 2.5268823529
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 8.7,
+        "Sample_Size": 2504.0,
+        "Low_Confidence_Limit": 7.0,
+        "High_Confidence_Limit": 10.4,
+        "Count": 415.6078431373,
+        "Population": 17340743.0,
+        "Rate": 2.396745098,
+        "CI.lower": 2.2852156863,
+        "CI.upper": 2.5268823529
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 11.8,
+        "Sample_Size": 2504.0,
+        "Low_Confidence_Limit": 10.1,
+        "High_Confidence_Limit": 13.5,
+        "Count": 415.6078431373,
+        "Population": 17340743.0,
+        "Rate": 2.396745098,
+        "CI.lower": 2.2852156863,
+        "CI.upper": 2.5268823529
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 12.9,
+        "Sample_Size": 2504.0,
+        "Low_Confidence_Limit": 11.1,
+        "High_Confidence_Limit": 14.8,
+        "Count": 415.6078431373,
+        "Population": 17340743.0,
+        "Rate": 2.396745098,
+        "CI.lower": 2.2852156863,
+        "CI.upper": 2.5268823529
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.6,
+        "Sample_Size": 2504.0,
+        "Low_Confidence_Limit": 16.5,
+        "High_Confidence_Limit": 20.7,
+        "Count": 415.6078431373,
+        "Population": 17340743.0,
+        "Rate": 2.396745098,
+        "CI.lower": 2.2852156863,
+        "CI.upper": 2.5268823529
+      }
+    },
+    {
+      "Year": 2002,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.4,
+        "Sample_Size": 2469.0,
+        "Low_Confidence_Limit": 2.0,
+        "High_Confidence_Limit": 2.8,
+        "Count": 435.7058823529,
+        "Population": 17555714.0,
+        "Rate": 2.4818431373,
+        "CI.lower": 2.3718039216,
+        "CI.upper": 2.6105686275
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 4.0,
+        "Sample_Size": 2469.0,
+        "Low_Confidence_Limit": 3.6,
+        "High_Confidence_Limit": 4.4,
+        "Count": 435.7058823529,
+        "Population": 17555714.0,
+        "Rate": 2.4818431373,
+        "CI.lower": 2.3718039216,
+        "CI.upper": 2.6105686275
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.1,
+        "Sample_Size": 2469.0,
+        "Low_Confidence_Limit": 6.5,
+        "High_Confidence_Limit": 7.6,
+        "Count": 435.7058823529,
+        "Population": 17555714.0,
+        "Rate": 2.4818431373,
+        "CI.lower": 2.3718039216,
+        "CI.upper": 2.6105686275
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 4.0,
+        "Sample_Size": 2469.0,
+        "Low_Confidence_Limit": 3.5,
+        "High_Confidence_Limit": 4.4,
+        "Count": 435.7058823529,
+        "Population": 17555714.0,
+        "Rate": 2.4818431373,
+        "CI.lower": 2.3718039216,
+        "CI.upper": 2.6105686275
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.9,
+        "Sample_Size": 2469.0,
+        "Low_Confidence_Limit": 5.4,
+        "High_Confidence_Limit": 8.3,
+        "Count": 435.7058823529,
+        "Population": 17555714.0,
+        "Rate": 2.4818431373,
+        "CI.lower": 2.3718039216,
+        "CI.upper": 2.6105686275
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 11.5,
+        "Sample_Size": 2469.0,
+        "Low_Confidence_Limit": 9.8,
+        "High_Confidence_Limit": 13.2,
+        "Count": 435.7058823529,
+        "Population": 17555714.0,
+        "Rate": 2.4818431373,
+        "CI.lower": 2.3718039216,
+        "CI.upper": 2.6105686275
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 11.9,
+        "Sample_Size": 2469.0,
+        "Low_Confidence_Limit": 10.2,
+        "High_Confidence_Limit": 13.7,
+        "Count": 435.7058823529,
+        "Population": 17555714.0,
+        "Rate": 2.4818431373,
+        "CI.lower": 2.3718039216,
+        "CI.upper": 2.6105686275
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 16.5,
+        "Sample_Size": 2469.0,
+        "Low_Confidence_Limit": 14.5,
+        "High_Confidence_Limit": 18.6,
+        "Count": 435.7058823529,
+        "Population": 17555714.0,
+        "Rate": 2.4818431373,
+        "CI.lower": 2.3718039216,
+        "CI.upper": 2.6105686275
+      }
+    },
+    {
+      "Year": 2003,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.8,
+        "Sample_Size": 2593.0,
+        "Low_Confidence_Limit": 2.4,
+        "High_Confidence_Limit": 3.2,
+        "Count": 436.7254901961,
+        "Population": 17783924.0,
+        "Rate": 2.455745098,
+        "CI.lower": 2.3489803922,
+        "CI.upper": 2.5809411765
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 4.6,
+        "Sample_Size": 2593.0,
+        "Low_Confidence_Limit": 4.1,
+        "High_Confidence_Limit": 5.0,
+        "Count": 436.7254901961,
+        "Population": 17783924.0,
+        "Rate": 2.455745098,
+        "CI.lower": 2.3489803922,
+        "CI.upper": 2.5809411765
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.7,
+        "Sample_Size": 2593.0,
+        "Low_Confidence_Limit": 7.1,
+        "High_Confidence_Limit": 8.2,
+        "Count": 436.7254901961,
+        "Population": 17783924.0,
+        "Rate": 2.455745098,
+        "CI.lower": 2.3489803922,
+        "CI.upper": 2.5809411765
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 4.3,
+        "Sample_Size": 2593.0,
+        "Low_Confidence_Limit": 3.8,
+        "High_Confidence_Limit": 4.7,
+        "Count": 436.7254901961,
+        "Population": 17783924.0,
+        "Rate": 2.455745098,
+        "CI.lower": 2.3489803922,
+        "CI.upper": 2.5809411765
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 8.5,
+        "Sample_Size": 2593.0,
+        "Low_Confidence_Limit": 7.1,
+        "High_Confidence_Limit": 9.9,
+        "Count": 436.7254901961,
+        "Population": 17783924.0,
+        "Rate": 2.455745098,
+        "CI.lower": 2.3489803922,
+        "CI.upper": 2.5809411765
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 13.7,
+        "Sample_Size": 2593.0,
+        "Low_Confidence_Limit": 12.0,
+        "High_Confidence_Limit": 15.4,
+        "Count": 436.7254901961,
+        "Population": 17783924.0,
+        "Rate": 2.455745098,
+        "CI.lower": 2.3489803922,
+        "CI.upper": 2.5809411765
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 13.6,
+        "Sample_Size": 2593.0,
+        "Low_Confidence_Limit": 12.0,
+        "High_Confidence_Limit": 15.3,
+        "Count": 436.7254901961,
+        "Population": 17783924.0,
+        "Rate": 2.455745098,
+        "CI.lower": 2.3489803922,
+        "CI.upper": 2.5809411765
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 17.8,
+        "Sample_Size": 2593.0,
+        "Low_Confidence_Limit": 15.8,
+        "High_Confidence_Limit": 19.7,
+        "Count": 436.7254901961,
+        "Population": 17783924.0,
+        "Rate": 2.455745098,
+        "CI.lower": 2.3489803922,
+        "CI.upper": 2.5809411765
+      }
+    },
+    {
+      "Year": 2004,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.7,
+        "Sample_Size": 2641.0,
+        "Low_Confidence_Limit": 2.4,
+        "High_Confidence_Limit": 3.1,
+        "Count": 479.568627451,
+        "Population": 17969405.0,
+        "Rate": 2.6688431373,
+        "CI.lower": 2.5602156863,
+        "CI.upper": 2.7957843137
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 4.0,
+        "Sample_Size": 2641.0,
+        "Low_Confidence_Limit": 3.6,
+        "High_Confidence_Limit": 4.4,
+        "Count": 479.568627451,
+        "Population": 17969405.0,
+        "Rate": 2.6688431373,
+        "CI.lower": 2.5602156863,
+        "CI.upper": 2.7957843137
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.0,
+        "Sample_Size": 2641.0,
+        "Low_Confidence_Limit": 6.5,
+        "High_Confidence_Limit": 7.5,
+        "Count": 479.568627451,
+        "Population": 17969405.0,
+        "Rate": 2.6688431373,
+        "CI.lower": 2.5602156863,
+        "CI.upper": 2.7957843137
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 4.0,
+        "Sample_Size": 2641.0,
+        "Low_Confidence_Limit": 3.6,
+        "High_Confidence_Limit": 4.4,
+        "Count": 479.568627451,
+        "Population": 17969405.0,
+        "Rate": 2.6688431373,
+        "CI.lower": 2.5602156863,
+        "CI.upper": 2.7957843137
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 8.1,
+        "Sample_Size": 2641.0,
+        "Low_Confidence_Limit": 6.9,
+        "High_Confidence_Limit": 9.3,
+        "Count": 479.568627451,
+        "Population": 17969405.0,
+        "Rate": 2.6688431373,
+        "CI.lower": 2.5602156863,
+        "CI.upper": 2.7957843137
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 12.1,
+        "Sample_Size": 2641.0,
+        "Low_Confidence_Limit": 10.5,
+        "High_Confidence_Limit": 13.6,
+        "Count": 479.568627451,
+        "Population": 17969405.0,
+        "Rate": 2.6688431373,
+        "CI.lower": 2.5602156863,
+        "CI.upper": 2.7957843137
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 12.1,
+        "Sample_Size": 2641.0,
+        "Low_Confidence_Limit": 10.7,
+        "High_Confidence_Limit": 13.6,
+        "Count": 479.568627451,
+        "Population": 17969405.0,
+        "Rate": 2.6688431373,
+        "CI.lower": 2.5602156863,
+        "CI.upper": 2.7957843137
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 17.8,
+        "Sample_Size": 2641.0,
+        "Low_Confidence_Limit": 15.9,
+        "High_Confidence_Limit": 19.6,
+        "Count": 479.568627451,
+        "Population": 17969405.0,
+        "Rate": 2.6688431373,
+        "CI.lower": 2.5602156863,
+        "CI.upper": 2.7957843137
+      }
+    },
+    {
+      "Year": 2005,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.3,
+        "Sample_Size": 3652.0,
+        "Low_Confidence_Limit": 2.0,
+        "High_Confidence_Limit": 2.7,
+        "Count": 543.7647058824,
+        "Population": 18088355.0,
+        "Rate": 3.0061568627,
+        "CI.lower": 2.8911372549,
+        "CI.upper": 3.1391176471
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.9,
+        "Sample_Size": 3652.0,
+        "Low_Confidence_Limit": 3.6,
+        "High_Confidence_Limit": 4.3,
+        "Count": 543.7647058824,
+        "Population": 18088355.0,
+        "Rate": 3.0061568627,
+        "CI.lower": 2.8911372549,
+        "CI.upper": 3.1391176471
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.0,
+        "Sample_Size": 3652.0,
+        "Low_Confidence_Limit": 6.5,
+        "High_Confidence_Limit": 7.4,
+        "Count": 543.7647058824,
+        "Population": 18088355.0,
+        "Rate": 3.0061568627,
+        "CI.lower": 2.8911372549,
+        "CI.upper": 3.1391176471
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.9,
+        "Sample_Size": 3652.0,
+        "Low_Confidence_Limit": 3.5,
+        "High_Confidence_Limit": 4.3,
+        "Count": 543.7647058824,
+        "Population": 18088355.0,
+        "Rate": 3.0061568627,
+        "CI.lower": 2.8911372549,
+        "CI.upper": 3.1391176471
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 7.1,
+        "Sample_Size": 3652.0,
+        "Low_Confidence_Limit": 6.0,
+        "High_Confidence_Limit": 8.3,
+        "Count": 543.7647058824,
+        "Population": 18088355.0,
+        "Rate": 3.0061568627,
+        "CI.lower": 2.8911372549,
+        "CI.upper": 3.1391176471
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 11.5,
+        "Sample_Size": 3652.0,
+        "Low_Confidence_Limit": 10.2,
+        "High_Confidence_Limit": 12.9,
+        "Count": 543.7647058824,
+        "Population": 18088355.0,
+        "Rate": 3.0061568627,
+        "CI.lower": 2.8911372549,
+        "CI.upper": 3.1391176471
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 11.9,
+        "Sample_Size": 3652.0,
+        "Low_Confidence_Limit": 10.4,
+        "High_Confidence_Limit": 13.3,
+        "Count": 543.7647058824,
+        "Population": 18088355.0,
+        "Rate": 3.0061568627,
+        "CI.lower": 2.8911372549,
+        "CI.upper": 3.1391176471
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.4,
+        "Sample_Size": 3652.0,
+        "Low_Confidence_Limit": 16.6,
+        "High_Confidence_Limit": 20.1,
+        "Count": 543.7647058824,
+        "Population": 18088355.0,
+        "Rate": 3.0061568627,
+        "CI.lower": 2.8911372549,
+        "CI.upper": 3.1391176471
+      }
+    },
+    {
+      "Year": 2006,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.7,
+        "Sample_Size": 3391.0,
+        "Low_Confidence_Limit": 2.4,
+        "High_Confidence_Limit": 3.1,
+        "Count": 521.8653846154,
+        "Population": 18220429.0,
+        "Rate": 2.8641153846,
+        "CI.lower": 2.7520576923,
+        "CI.upper": 2.9940384615
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 4.3,
+        "Sample_Size": 3391.0,
+        "Low_Confidence_Limit": 3.9,
+        "High_Confidence_Limit": 4.7,
+        "Count": 521.8653846154,
+        "Population": 18220429.0,
+        "Rate": 2.8641153846,
+        "CI.lower": 2.7520576923,
+        "CI.upper": 2.9940384615
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.4,
+        "Sample_Size": 3391.0,
+        "Low_Confidence_Limit": 6.9,
+        "High_Confidence_Limit": 7.9,
+        "Count": 521.8653846154,
+        "Population": 18220429.0,
+        "Rate": 2.8641153846,
+        "CI.lower": 2.7520576923,
+        "CI.upper": 2.9940384615
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 4.2,
+        "Sample_Size": 3391.0,
+        "Low_Confidence_Limit": 3.8,
+        "High_Confidence_Limit": 4.6,
+        "Count": 521.8653846154,
+        "Population": 18220429.0,
+        "Rate": 2.8641153846,
+        "CI.lower": 2.7520576923,
+        "CI.upper": 2.9940384615
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 8.0,
+        "Sample_Size": 3391.0,
+        "Low_Confidence_Limit": 6.8,
+        "High_Confidence_Limit": 9.2,
+        "Count": 521.8653846154,
+        "Population": 18220429.0,
+        "Rate": 2.8641153846,
+        "CI.lower": 2.7520576923,
+        "CI.upper": 2.9940384615
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 13.2,
+        "Sample_Size": 3391.0,
+        "Low_Confidence_Limit": 11.6,
+        "High_Confidence_Limit": 14.8,
+        "Count": 521.8653846154,
+        "Population": 18220429.0,
+        "Rate": 2.8641153846,
+        "CI.lower": 2.7520576923,
+        "CI.upper": 2.9940384615
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 12.6,
+        "Sample_Size": 3391.0,
+        "Low_Confidence_Limit": 11.1,
+        "High_Confidence_Limit": 14.1,
+        "Count": 521.8653846154,
+        "Population": 18220429.0,
+        "Rate": 2.8641153846,
+        "CI.lower": 2.7520576923,
+        "CI.upper": 2.9940384615
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 19.4,
+        "Sample_Size": 3391.0,
+        "Low_Confidence_Limit": 17.4,
+        "High_Confidence_Limit": 21.3,
+        "Count": 521.8653846154,
+        "Population": 18220429.0,
+        "Rate": 2.8641153846,
+        "CI.lower": 2.7520576923,
+        "CI.upper": 2.9940384615
+      }
+    },
+    {
+      "Year": 2007,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.2,
+        "Sample_Size": 3475.0,
+        "Low_Confidence_Limit": 1.9,
+        "High_Confidence_Limit": 2.5,
+        "Count": 466.0,
+        "Population": 18373955.0,
+        "Rate": 2.5361296296,
+        "CI.lower": 2.4328148148,
+        "CI.upper": 2.6572962963
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.8,
+        "Sample_Size": 3475.0,
+        "Low_Confidence_Limit": 3.5,
+        "High_Confidence_Limit": 4.2,
+        "Count": 466.0,
+        "Population": 18373955.0,
+        "Rate": 2.5361296296,
+        "CI.lower": 2.4328148148,
+        "CI.upper": 2.6572962963
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.7,
+        "Sample_Size": 3475.0,
+        "Low_Confidence_Limit": 6.2,
+        "High_Confidence_Limit": 7.2,
+        "Count": 466.0,
+        "Population": 18373955.0,
+        "Rate": 2.5361296296,
+        "CI.lower": 2.4328148148,
+        "CI.upper": 2.6572962963
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.7,
+        "Sample_Size": 3475.0,
+        "Low_Confidence_Limit": 3.4,
+        "High_Confidence_Limit": 4.1,
+        "Count": 466.0,
+        "Population": 18373955.0,
+        "Rate": 2.5361296296,
+        "CI.lower": 2.4328148148,
+        "CI.upper": 2.6572962963
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.3,
+        "Sample_Size": 3475.0,
+        "Low_Confidence_Limit": 5.3,
+        "High_Confidence_Limit": 7.4,
+        "Count": 466.0,
+        "Population": 18373955.0,
+        "Rate": 2.5361296296,
+        "CI.lower": 2.4328148148,
+        "CI.upper": 2.6572962963
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 11.4,
+        "Sample_Size": 3475.0,
+        "Low_Confidence_Limit": 9.9,
+        "High_Confidence_Limit": 12.8,
+        "Count": 466.0,
+        "Population": 18373955.0,
+        "Rate": 2.5361296296,
+        "CI.lower": 2.4328148148,
+        "CI.upper": 2.6572962963
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 10.8,
+        "Sample_Size": 3475.0,
+        "Low_Confidence_Limit": 9.6,
+        "High_Confidence_Limit": 12.1,
+        "Count": 466.0,
+        "Population": 18373955.0,
+        "Rate": 2.5361296296,
+        "CI.lower": 2.4328148148,
+        "CI.upper": 2.6572962963
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.4,
+        "Sample_Size": 3475.0,
+        "Low_Confidence_Limit": 16.6,
+        "High_Confidence_Limit": 20.2,
+        "Count": 466.0,
+        "Population": 18373955.0,
+        "Rate": 2.5361296296,
+        "CI.lower": 2.4328148148,
+        "CI.upper": 2.6572962963
+      }
+    },
+    {
+      "Year": 2008,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.6,
+        "Sample_Size": 6924.0,
+        "Low_Confidence_Limit": 2.4,
+        "High_Confidence_Limit": 2.9,
+        "Count": 407.2545454545,
+        "Population": 18526603.0,
+        "Rate": 2.1981636364,
+        "CI.lower": 2.0984,
+        "CI.upper": 2.3155636364
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 4.1,
+        "Sample_Size": 6924.0,
+        "Low_Confidence_Limit": 3.8,
+        "High_Confidence_Limit": 4.4,
+        "Count": 407.2545454545,
+        "Population": 18526603.0,
+        "Rate": 2.1981636364,
+        "CI.lower": 2.0984,
+        "CI.upper": 2.3155636364
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.0,
+        "Sample_Size": 6924.0,
+        "Low_Confidence_Limit": 6.7,
+        "High_Confidence_Limit": 7.4,
+        "Count": 407.2545454545,
+        "Population": 18526603.0,
+        "Rate": 2.1981636364,
+        "CI.lower": 2.0984,
+        "CI.upper": 2.3155636364
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 4.1,
+        "Sample_Size": 6924.0,
+        "Low_Confidence_Limit": 3.8,
+        "High_Confidence_Limit": 4.4,
+        "Count": 407.2545454545,
+        "Population": 18526603.0,
+        "Rate": 2.1981636364,
+        "CI.lower": 2.0984,
+        "CI.upper": 2.3155636364
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 8.2,
+        "Sample_Size": 6924.0,
+        "Low_Confidence_Limit": 7.3,
+        "High_Confidence_Limit": 9.1,
+        "Count": 407.2545454545,
+        "Population": 18526603.0,
+        "Rate": 2.1981636364,
+        "CI.lower": 2.0984,
+        "CI.upper": 2.3155636364
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 12.0,
+        "Sample_Size": 6924.0,
+        "Low_Confidence_Limit": 10.9,
+        "High_Confidence_Limit": 13.0,
+        "Count": 407.2545454545,
+        "Population": 18526603.0,
+        "Rate": 2.1981636364,
+        "CI.lower": 2.0984,
+        "CI.upper": 2.3155636364
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 12.5,
+        "Sample_Size": 6924.0,
+        "Low_Confidence_Limit": 11.4,
+        "High_Confidence_Limit": 13.5,
+        "Count": 407.2545454545,
+        "Population": 18526603.0,
+        "Rate": 2.1981636364,
+        "CI.lower": 2.0984,
+        "CI.upper": 2.3155636364
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.8,
+        "Sample_Size": 6924.0,
+        "Low_Confidence_Limit": 17.5,
+        "High_Confidence_Limit": 20.2,
+        "Count": 407.2545454545,
+        "Population": 18526603.0,
+        "Rate": 2.1981636364,
+        "CI.lower": 2.0984,
+        "CI.upper": 2.3155636364
+      }
+    },
+    {
+      "Year": 2009,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.7,
+        "Sample_Size": 10340.0,
+        "Low_Confidence_Limit": 2.5,
+        "High_Confidence_Limit": 3.0,
+        "Count": 370.0535714286,
+        "Population": 18634031.0,
+        "Rate": 1.9858214286,
+        "CI.lower": 1.8870892857,
+        "CI.upper": 2.1021785714
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 4.2,
+        "Sample_Size": 10340.0,
+        "Low_Confidence_Limit": 3.9,
+        "High_Confidence_Limit": 4.5,
+        "Count": 370.0535714286,
+        "Population": 18634031.0,
+        "Rate": 1.9858214286,
+        "CI.lower": 1.8870892857,
+        "CI.upper": 2.1021785714
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.4,
+        "Sample_Size": 10340.0,
+        "Low_Confidence_Limit": 7.1,
+        "High_Confidence_Limit": 7.7,
+        "Count": 370.0535714286,
+        "Population": 18634031.0,
+        "Rate": 1.9858214286,
+        "CI.lower": 1.8870892857,
+        "CI.upper": 2.1021785714
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 4.3,
+        "Sample_Size": 10340.0,
+        "Low_Confidence_Limit": 4.0,
+        "High_Confidence_Limit": 4.5,
+        "Count": 370.0535714286,
+        "Population": 18634031.0,
+        "Rate": 1.9858214286,
+        "CI.lower": 1.8870892857,
+        "CI.upper": 2.1021785714
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 8.4,
+        "Sample_Size": 10340.0,
+        "Low_Confidence_Limit": 7.4,
+        "High_Confidence_Limit": 9.4,
+        "Count": 370.0535714286,
+        "Population": 18634031.0,
+        "Rate": 1.9858214286,
+        "CI.lower": 1.8870892857,
+        "CI.upper": 2.1021785714
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 13.0,
+        "Sample_Size": 10340.0,
+        "Low_Confidence_Limit": 11.8,
+        "High_Confidence_Limit": 14.2,
+        "Count": 370.0535714286,
+        "Population": 18634031.0,
+        "Rate": 1.9858214286,
+        "CI.lower": 1.8870892857,
+        "CI.upper": 2.1021785714
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 13.7,
+        "Sample_Size": 10340.0,
+        "Low_Confidence_Limit": 12.6,
+        "High_Confidence_Limit": 15.0,
+        "Count": 370.0535714286,
+        "Population": 18634031.0,
+        "Rate": 1.9858214286,
+        "CI.lower": 1.8870892857,
+        "CI.upper": 2.1021785714
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 20.9,
+        "Sample_Size": 10340.0,
+        "Low_Confidence_Limit": 19.5,
+        "High_Confidence_Limit": 22.3,
+        "Count": 370.0535714286,
+        "Population": 18634031.0,
+        "Rate": 1.9858214286,
+        "CI.lower": 1.8870892857,
+        "CI.upper": 2.1021785714
+      }
+    },
+    {
+      "Year": 2010,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.6,
+        "Sample_Size": 10266.0,
+        "Low_Confidence_Limit": 2.4,
+        "High_Confidence_Limit": 2.8,
+        "Count": 455.9152542373,
+        "Population": 18752748.0,
+        "Rate": 2.431220339,
+        "CI.lower": 2.327,
+        "CI.upper": 2.5527966102
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 4.2,
+        "Sample_Size": 10266.0,
+        "Low_Confidence_Limit": 4.0,
+        "High_Confidence_Limit": 4.5,
+        "Count": 455.9152542373,
+        "Population": 18752748.0,
+        "Rate": 2.431220339,
+        "CI.lower": 2.327,
+        "CI.upper": 2.5527966102
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 7.1,
+        "Sample_Size": 10266.0,
+        "Low_Confidence_Limit": 6.8,
+        "High_Confidence_Limit": 7.4,
+        "Count": 455.9152542373,
+        "Population": 18752748.0,
+        "Rate": 2.431220339,
+        "CI.lower": 2.327,
+        "CI.upper": 2.5527966102
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 4.0,
+        "Sample_Size": 10266.0,
+        "Low_Confidence_Limit": 3.8,
+        "High_Confidence_Limit": 4.2,
+        "Count": 455.9152542373,
+        "Population": 18752748.0,
+        "Rate": 2.431220339,
+        "CI.lower": 2.327,
+        "CI.upper": 2.5527966102
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 8.2,
+        "Sample_Size": 10266.0,
+        "Low_Confidence_Limit": 7.3,
+        "High_Confidence_Limit": 9.2,
+        "Count": 455.9152542373,
+        "Population": 18752748.0,
+        "Rate": 2.431220339,
+        "CI.lower": 2.327,
+        "CI.upper": 2.5527966102
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 12.5,
+        "Sample_Size": 10266.0,
+        "Low_Confidence_Limit": 11.4,
+        "High_Confidence_Limit": 13.7,
+        "Count": 455.9152542373,
+        "Population": 18752748.0,
+        "Rate": 2.431220339,
+        "CI.lower": 2.327,
+        "CI.upper": 2.5527966102
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 12.0,
+        "Sample_Size": 10266.0,
+        "Low_Confidence_Limit": 10.9,
+        "High_Confidence_Limit": 13.1,
+        "Count": 455.9152542373,
+        "Population": 18752748.0,
+        "Rate": 2.431220339,
+        "CI.lower": 2.327,
+        "CI.upper": 2.5527966102
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 19.5,
+        "Sample_Size": 10266.0,
+        "Low_Confidence_Limit": 18.2,
+        "High_Confidence_Limit": 20.8,
+        "Count": 455.9152542373,
+        "Population": 18752748.0,
+        "Rate": 2.431220339,
+        "CI.lower": 2.327,
+        "CI.upper": 2.5527966102
+      }
+    }
+  ],
+  "Male": [
+    {
+      "Year": 2001,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 1.7,
+        "Sample_Size": 1701.0,
+        "Low_Confidence_Limit": 1.3,
+        "High_Confidence_Limit": 2.1,
+        "Count": 616.0,
+        "Population": 17174034.0,
+        "Rate": 3.5868039216,
+        "CI.lower": 3.4455098039,
+        "CI.upper": 3.746745098
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 2.9,
+        "Sample_Size": 1701.0,
+        "Low_Confidence_Limit": 2.5,
+        "High_Confidence_Limit": 3.4,
+        "Count": 616.0,
+        "Population": 17174034.0,
+        "Rate": 3.5868039216,
+        "CI.lower": 3.4455098039,
+        "CI.upper": 3.746745098
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.3,
+        "Sample_Size": 1701.0,
+        "Low_Confidence_Limit": 4.7,
+        "High_Confidence_Limit": 5.9,
+        "Count": 616.0,
+        "Population": 17174034.0,
+        "Rate": 3.5868039216,
+        "CI.lower": 3.4455098039,
+        "CI.upper": 3.746745098
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 2.9,
+        "Sample_Size": 1701.0,
+        "Low_Confidence_Limit": 2.4,
+        "High_Confidence_Limit": 3.3,
+        "Count": 616.0,
+        "Population": 17174034.0,
+        "Rate": 3.5868039216,
+        "CI.lower": 3.4455098039,
+        "CI.upper": 3.746745098
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 5.0,
+        "Sample_Size": 1701.0,
+        "Low_Confidence_Limit": 3.8,
+        "High_Confidence_Limit": 6.3,
+        "Count": 616.0,
+        "Population": 17174034.0,
+        "Rate": 3.5868039216,
+        "CI.lower": 3.4455098039,
+        "CI.upper": 3.746745098
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.1,
+        "Sample_Size": 1701.0,
+        "Low_Confidence_Limit": 7.1,
+        "High_Confidence_Limit": 11.1,
+        "Count": 616.0,
+        "Population": 17174034.0,
+        "Rate": 3.5868039216,
+        "CI.lower": 3.4455098039,
+        "CI.upper": 3.746745098
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 8.3,
+        "Sample_Size": 1701.0,
+        "Low_Confidence_Limit": 6.7,
+        "High_Confidence_Limit": 9.8,
+        "Count": 616.0,
+        "Population": 17174034.0,
+        "Rate": 3.5868039216,
+        "CI.lower": 3.4455098039,
+        "CI.upper": 3.746745098
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 13.4,
+        "Sample_Size": 1701.0,
+        "Low_Confidence_Limit": 11.4,
+        "High_Confidence_Limit": 15.5,
+        "Count": 616.0,
+        "Population": 17174034.0,
+        "Rate": 3.5868039216,
+        "CI.lower": 3.4455098039,
+        "CI.upper": 3.746745098
+      }
+    },
+    {
+      "Year": 2002,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 1.9,
+        "Sample_Size": 1728.0,
+        "Low_Confidence_Limit": 1.5,
+        "High_Confidence_Limit": 2.3,
+        "Count": 657.9215686275,
+        "Population": 17384620.0,
+        "Rate": 3.7845490196,
+        "CI.lower": 3.6423529412,
+        "CI.upper": 3.9452745098
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.1,
+        "Sample_Size": 1728.0,
+        "Low_Confidence_Limit": 2.6,
+        "High_Confidence_Limit": 3.6,
+        "Count": 657.9215686275,
+        "Population": 17384620.0,
+        "Rate": 3.7845490196,
+        "CI.lower": 3.6423529412,
+        "CI.upper": 3.9452745098
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.6,
+        "Sample_Size": 1728.0,
+        "Low_Confidence_Limit": 4.9,
+        "High_Confidence_Limit": 6.2,
+        "Count": 657.9215686275,
+        "Population": 17384620.0,
+        "Rate": 3.7845490196,
+        "CI.lower": 3.6423529412,
+        "CI.upper": 3.9452745098
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.1,
+        "Sample_Size": 1728.0,
+        "Low_Confidence_Limit": 2.6,
+        "High_Confidence_Limit": 3.5,
+        "Count": 657.9215686275,
+        "Population": 17384620.0,
+        "Rate": 3.7845490196,
+        "CI.lower": 3.6423529412,
+        "CI.upper": 3.9452745098
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 5.7,
+        "Sample_Size": 1728.0,
+        "Low_Confidence_Limit": 4.3,
+        "High_Confidence_Limit": 7.0,
+        "Count": 657.9215686275,
+        "Population": 17384620.0,
+        "Rate": 3.7845490196,
+        "CI.lower": 3.6423529412,
+        "CI.upper": 3.9452745098
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.4,
+        "Sample_Size": 1728.0,
+        "Low_Confidence_Limit": 7.4,
+        "High_Confidence_Limit": 11.3,
+        "Count": 657.9215686275,
+        "Population": 17384620.0,
+        "Rate": 3.7845490196,
+        "CI.lower": 3.6423529412,
+        "CI.upper": 3.9452745098
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 9.2,
+        "Sample_Size": 1728.0,
+        "Low_Confidence_Limit": 7.5,
+        "High_Confidence_Limit": 11.0,
+        "Count": 657.9215686275,
+        "Population": 17384620.0,
+        "Rate": 3.7845490196,
+        "CI.lower": 3.6423529412,
+        "CI.upper": 3.9452745098
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 14.4,
+        "Sample_Size": 1728.0,
+        "Low_Confidence_Limit": 12.3,
+        "High_Confidence_Limit": 16.5,
+        "Count": 657.9215686275,
+        "Population": 17384620.0,
+        "Rate": 3.7845490196,
+        "CI.lower": 3.6423529412,
+        "CI.upper": 3.9452745098
+      }
+    },
+    {
+      "Year": 2003,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.2,
+        "Sample_Size": 1816.0,
+        "Low_Confidence_Limit": 1.8,
+        "High_Confidence_Limit": 2.6,
+        "Count": 642.0,
+        "Population": 17607062.0,
+        "Rate": 3.6462941176,
+        "CI.lower": 3.5096862745,
+        "CI.upper": 3.8014117647
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.2,
+        "Sample_Size": 1816.0,
+        "Low_Confidence_Limit": 2.8,
+        "High_Confidence_Limit": 3.7,
+        "Count": 642.0,
+        "Population": 17607062.0,
+        "Rate": 3.6462941176,
+        "CI.lower": 3.5096862745,
+        "CI.upper": 3.8014117647
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.7,
+        "Sample_Size": 1816.0,
+        "Low_Confidence_Limit": 5.1,
+        "High_Confidence_Limit": 6.2,
+        "Count": 642.0,
+        "Population": 17607062.0,
+        "Rate": 3.6462941176,
+        "CI.lower": 3.5096862745,
+        "CI.upper": 3.8014117647
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.2,
+        "Sample_Size": 1816.0,
+        "Low_Confidence_Limit": 2.7,
+        "High_Confidence_Limit": 3.6,
+        "Count": 642.0,
+        "Population": 17607062.0,
+        "Rate": 3.6462941176,
+        "CI.lower": 3.5096862745,
+        "CI.upper": 3.8014117647
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.9,
+        "Sample_Size": 1816.0,
+        "Low_Confidence_Limit": 5.4,
+        "High_Confidence_Limit": 8.5,
+        "Count": 642.0,
+        "Population": 17607062.0,
+        "Rate": 3.6462941176,
+        "CI.lower": 3.5096862745,
+        "CI.upper": 3.8014117647
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.5,
+        "Sample_Size": 1816.0,
+        "Low_Confidence_Limit": 7.7,
+        "High_Confidence_Limit": 11.3,
+        "Count": 642.0,
+        "Population": 17607062.0,
+        "Rate": 3.6462941176,
+        "CI.lower": 3.5096862745,
+        "CI.upper": 3.8014117647
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 9.5,
+        "Sample_Size": 1816.0,
+        "Low_Confidence_Limit": 7.8,
+        "High_Confidence_Limit": 11.2,
+        "Count": 642.0,
+        "Population": 17607062.0,
+        "Rate": 3.6462941176,
+        "CI.lower": 3.5096862745,
+        "CI.upper": 3.8014117647
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 12.5,
+        "Sample_Size": 1816.0,
+        "Low_Confidence_Limit": 10.6,
+        "High_Confidence_Limit": 14.4,
+        "Count": 642.0,
+        "Population": 17607062.0,
+        "Rate": 3.6462941176,
+        "CI.lower": 3.5096862745,
+        "CI.upper": 3.8014117647
+      }
+    },
+    {
+      "Year": 2004,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 1.9,
+        "Sample_Size": 1778.0,
+        "Low_Confidence_Limit": 1.5,
+        "High_Confidence_Limit": 2.2,
+        "Count": 696.5882352941,
+        "Population": 17785422.0,
+        "Rate": 3.9166862745,
+        "CI.lower": 3.7780784314,
+        "CI.upper": 4.0733921569
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.1,
+        "Sample_Size": 1778.0,
+        "Low_Confidence_Limit": 2.6,
+        "High_Confidence_Limit": 3.5,
+        "Count": 696.5882352941,
+        "Population": 17785422.0,
+        "Rate": 3.9166862745,
+        "CI.lower": 3.7780784314,
+        "CI.upper": 4.0733921569
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.4,
+        "Sample_Size": 1778.0,
+        "Low_Confidence_Limit": 4.8,
+        "High_Confidence_Limit": 6.0,
+        "Count": 696.5882352941,
+        "Population": 17785422.0,
+        "Rate": 3.9166862745,
+        "CI.lower": 3.7780784314,
+        "CI.upper": 4.0733921569
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.3,
+        "Sample_Size": 1778.0,
+        "Low_Confidence_Limit": 2.8,
+        "High_Confidence_Limit": 3.8,
+        "Count": 696.5882352941,
+        "Population": 17785422.0,
+        "Rate": 3.9166862745,
+        "CI.lower": 3.7780784314,
+        "CI.upper": 4.0733921569
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 5.7,
+        "Sample_Size": 1778.0,
+        "Low_Confidence_Limit": 4.3,
+        "High_Confidence_Limit": 7.1,
+        "Count": 696.5882352941,
+        "Population": 17785422.0,
+        "Rate": 3.9166862745,
+        "CI.lower": 3.7780784314,
+        "CI.upper": 4.0733921569
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.0,
+        "Sample_Size": 1778.0,
+        "Low_Confidence_Limit": 7.2,
+        "High_Confidence_Limit": 10.8,
+        "Count": 696.5882352941,
+        "Population": 17785422.0,
+        "Rate": 3.9166862745,
+        "CI.lower": 3.7780784314,
+        "CI.upper": 4.0733921569
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 9.7,
+        "Sample_Size": 1778.0,
+        "Low_Confidence_Limit": 7.9,
+        "High_Confidence_Limit": 11.5,
+        "Count": 696.5882352941,
+        "Population": 17785422.0,
+        "Rate": 3.9166862745,
+        "CI.lower": 3.7780784314,
+        "CI.upper": 4.0733921569
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 17.5,
+        "Sample_Size": 1778.0,
+        "Low_Confidence_Limit": 15.1,
+        "High_Confidence_Limit": 19.9,
+        "Count": 696.5882352941,
+        "Population": 17785422.0,
+        "Rate": 3.9166862745,
+        "CI.lower": 3.7780784314,
+        "CI.upper": 4.0733921569
+      }
+    },
+    {
+      "Year": 2005,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 1.9,
+        "Sample_Size": 2351.0,
+        "Low_Confidence_Limit": 1.5,
+        "High_Confidence_Limit": 2.2,
+        "Count": 758.0,
+        "Population": 17899282.0,
+        "Rate": 4.2348627451,
+        "CI.lower": 4.0899803922,
+        "CI.upper": 4.3976470588
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.1,
+        "Sample_Size": 2351.0,
+        "Low_Confidence_Limit": 2.7,
+        "High_Confidence_Limit": 3.5,
+        "Count": 758.0,
+        "Population": 17899282.0,
+        "Rate": 4.2348627451,
+        "CI.lower": 4.0899803922,
+        "CI.upper": 4.3976470588
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.6,
+        "Sample_Size": 2351.0,
+        "Low_Confidence_Limit": 5.1,
+        "High_Confidence_Limit": 6.2,
+        "Count": 758.0,
+        "Population": 17899282.0,
+        "Rate": 4.2348627451,
+        "CI.lower": 4.0899803922,
+        "CI.upper": 4.3976470588
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.2,
+        "Sample_Size": 2351.0,
+        "Low_Confidence_Limit": 2.7,
+        "High_Confidence_Limit": 3.6,
+        "Count": 758.0,
+        "Population": 17899282.0,
+        "Rate": 4.2348627451,
+        "CI.lower": 4.0899803922,
+        "CI.upper": 4.3976470588
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 5.3,
+        "Sample_Size": 2351.0,
+        "Low_Confidence_Limit": 4.2,
+        "High_Confidence_Limit": 6.5,
+        "Count": 758.0,
+        "Population": 17899282.0,
+        "Rate": 4.2348627451,
+        "CI.lower": 4.0899803922,
+        "CI.upper": 4.3976470588
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.0,
+        "Sample_Size": 2351.0,
+        "Low_Confidence_Limit": 7.4,
+        "High_Confidence_Limit": 10.7,
+        "Count": 758.0,
+        "Population": 17899282.0,
+        "Rate": 4.2348627451,
+        "CI.lower": 4.0899803922,
+        "CI.upper": 4.3976470588
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 9.1,
+        "Sample_Size": 2351.0,
+        "Low_Confidence_Limit": 7.6,
+        "High_Confidence_Limit": 10.7,
+        "Count": 758.0,
+        "Population": 17899282.0,
+        "Rate": 4.2348627451,
+        "CI.lower": 4.0899803922,
+        "CI.upper": 4.3976470588
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 16.9,
+        "Sample_Size": 2351.0,
+        "Low_Confidence_Limit": 14.7,
+        "High_Confidence_Limit": 19.2,
+        "Count": 758.0,
+        "Population": 17899282.0,
+        "Rate": 4.2348627451,
+        "CI.lower": 4.0899803922,
+        "CI.upper": 4.3976470588
+      }
+    },
+    {
+      "Year": 2006,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.1,
+        "Sample_Size": 2247.0,
+        "Low_Confidence_Limit": 1.8,
+        "High_Confidence_Limit": 2.5,
+        "Count": 751.7884615385,
+        "Population": 18028441.0,
+        "Rate": 4.1700961538,
+        "CI.lower": 4.0262115385,
+        "CI.upper": 4.3315576923
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.4,
+        "Sample_Size": 2247.0,
+        "Low_Confidence_Limit": 2.9,
+        "High_Confidence_Limit": 3.8,
+        "Count": 751.7884615385,
+        "Population": 18028441.0,
+        "Rate": 4.1700961538,
+        "CI.lower": 4.0262115385,
+        "CI.upper": 4.3315576923
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.9,
+        "Sample_Size": 2247.0,
+        "Low_Confidence_Limit": 5.3,
+        "High_Confidence_Limit": 6.4,
+        "Count": 751.7884615385,
+        "Population": 18028441.0,
+        "Rate": 4.1700961538,
+        "CI.lower": 4.0262115385,
+        "CI.upper": 4.3315576923
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.3,
+        "Sample_Size": 2247.0,
+        "Low_Confidence_Limit": 2.9,
+        "High_Confidence_Limit": 3.8,
+        "Count": 751.7884615385,
+        "Population": 18028441.0,
+        "Rate": 4.1700961538,
+        "CI.lower": 4.0262115385,
+        "CI.upper": 4.3315576923
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.2,
+        "Sample_Size": 2247.0,
+        "Low_Confidence_Limit": 4.9,
+        "High_Confidence_Limit": 7.4,
+        "Count": 751.7884615385,
+        "Population": 18028441.0,
+        "Rate": 4.1700961538,
+        "CI.lower": 4.0262115385,
+        "CI.upper": 4.3315576923
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.9,
+        "Sample_Size": 2247.0,
+        "Low_Confidence_Limit": 8.2,
+        "High_Confidence_Limit": 11.6,
+        "Count": 751.7884615385,
+        "Population": 18028441.0,
+        "Rate": 4.1700961538,
+        "CI.lower": 4.0262115385,
+        "CI.upper": 4.3315576923
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 9.8,
+        "Sample_Size": 2247.0,
+        "Low_Confidence_Limit": 8.2,
+        "High_Confidence_Limit": 11.5,
+        "Count": 751.7884615385,
+        "Population": 18028441.0,
+        "Rate": 4.1700961538,
+        "CI.lower": 4.0262115385,
+        "CI.upper": 4.3315576923
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.7,
+        "Sample_Size": 2247.0,
+        "Low_Confidence_Limit": 16.4,
+        "High_Confidence_Limit": 21.0,
+        "Count": 751.7884615385,
+        "Population": 18028441.0,
+        "Rate": 4.1700961538,
+        "CI.lower": 4.0262115385,
+        "CI.upper": 4.3315576923
+      }
+    },
+    {
+      "Year": 2007,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 1.6,
+        "Sample_Size": 2141.0,
+        "Low_Confidence_Limit": 1.3,
+        "High_Confidence_Limit": 1.9,
+        "Count": 690.7962962963,
+        "Population": 18180620.0,
+        "Rate": 3.7998148148,
+        "CI.lower": 3.6662222222,
+        "CI.upper": 3.9507777778
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.1,
+        "Sample_Size": 2141.0,
+        "Low_Confidence_Limit": 2.7,
+        "High_Confidence_Limit": 3.6,
+        "Count": 690.7962962963,
+        "Population": 18180620.0,
+        "Rate": 3.7998148148,
+        "CI.lower": 3.6662222222,
+        "CI.upper": 3.9507777778
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.2,
+        "Sample_Size": 2141.0,
+        "Low_Confidence_Limit": 4.7,
+        "High_Confidence_Limit": 5.8,
+        "Count": 690.7962962963,
+        "Population": 18180620.0,
+        "Rate": 3.7998148148,
+        "CI.lower": 3.6662222222,
+        "CI.upper": 3.9507777778
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 2.8,
+        "Sample_Size": 2141.0,
+        "Low_Confidence_Limit": 2.4,
+        "High_Confidence_Limit": 3.2,
+        "Count": 690.7962962963,
+        "Population": 18180620.0,
+        "Rate": 3.7998148148,
+        "CI.lower": 3.6662222222,
+        "CI.upper": 3.9507777778
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 4.4,
+        "Sample_Size": 2141.0,
+        "Low_Confidence_Limit": 3.4,
+        "High_Confidence_Limit": 5.5,
+        "Count": 690.7962962963,
+        "Population": 18180620.0,
+        "Rate": 3.7998148148,
+        "CI.lower": 3.6662222222,
+        "CI.upper": 3.9507777778
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 8.8,
+        "Sample_Size": 2141.0,
+        "Low_Confidence_Limit": 7.1,
+        "High_Confidence_Limit": 10.4,
+        "Count": 690.7962962963,
+        "Population": 18180620.0,
+        "Rate": 3.7998148148,
+        "CI.lower": 3.6662222222,
+        "CI.upper": 3.9507777778
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 8.8,
+        "Sample_Size": 2141.0,
+        "Low_Confidence_Limit": 7.2,
+        "High_Confidence_Limit": 10.3,
+        "Count": 690.7962962963,
+        "Population": 18180620.0,
+        "Rate": 3.7998148148,
+        "CI.lower": 3.6662222222,
+        "CI.upper": 3.9507777778
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 17.4,
+        "Sample_Size": 2141.0,
+        "Low_Confidence_Limit": 15.0,
+        "High_Confidence_Limit": 19.9,
+        "Count": 690.7962962963,
+        "Population": 18180620.0,
+        "Rate": 3.7998148148,
+        "CI.lower": 3.6662222222,
+        "CI.upper": 3.9507777778
+      }
+    },
+    {
+      "Year": 2008,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.5,
+        "Sample_Size": 4477.0,
+        "Low_Confidence_Limit": 2.2,
+        "High_Confidence_Limit": 2.8,
+        "Count": 629.6,
+        "Population": 18331667.0,
+        "Rate": 3.4344727273,
+        "CI.lower": 3.3052727273,
+        "CI.upper": 3.5812909091
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.2,
+        "Sample_Size": 4477.0,
+        "Low_Confidence_Limit": 2.9,
+        "High_Confidence_Limit": 3.6,
+        "Count": 629.6,
+        "Population": 18331667.0,
+        "Rate": 3.4344727273,
+        "CI.lower": 3.3052727273,
+        "CI.upper": 3.5812909091
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.9,
+        "Sample_Size": 4477.0,
+        "Low_Confidence_Limit": 5.5,
+        "High_Confidence_Limit": 6.3,
+        "Count": 629.6,
+        "Population": 18331667.0,
+        "Rate": 3.4344727273,
+        "CI.lower": 3.3052727273,
+        "CI.upper": 3.5812909091
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.4,
+        "Sample_Size": 4477.0,
+        "Low_Confidence_Limit": 3.1,
+        "High_Confidence_Limit": 3.7,
+        "Count": 629.6,
+        "Population": 18331667.0,
+        "Rate": 3.4344727273,
+        "CI.lower": 3.3052727273,
+        "CI.upper": 3.5812909091
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 7.9,
+        "Sample_Size": 4477.0,
+        "Low_Confidence_Limit": 6.6,
+        "High_Confidence_Limit": 9.2,
+        "Count": 629.6,
+        "Population": 18331667.0,
+        "Rate": 3.4344727273,
+        "CI.lower": 3.3052727273,
+        "CI.upper": 3.5812909091
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.4,
+        "Sample_Size": 4477.0,
+        "Low_Confidence_Limit": 8.1,
+        "High_Confidence_Limit": 10.6,
+        "Count": 629.6,
+        "Population": 18331667.0,
+        "Rate": 3.4344727273,
+        "CI.lower": 3.3052727273,
+        "CI.upper": 3.5812909091
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 10.1,
+        "Sample_Size": 4477.0,
+        "Low_Confidence_Limit": 8.8,
+        "High_Confidence_Limit": 11.4,
+        "Count": 629.6,
+        "Population": 18331667.0,
+        "Rate": 3.4344727273,
+        "CI.lower": 3.3052727273,
+        "CI.upper": 3.5812909091
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.5,
+        "Sample_Size": 4477.0,
+        "Low_Confidence_Limit": 16.9,
+        "High_Confidence_Limit": 20.1,
+        "Count": 629.6,
+        "Population": 18331667.0,
+        "Rate": 3.4344727273,
+        "CI.lower": 3.3052727273,
+        "CI.upper": 3.5812909091
+      }
+    },
+    {
+      "Year": 2009,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.2,
+        "Sample_Size": 6840.0,
+        "Low_Confidence_Limit": 2.0,
+        "High_Confidence_Limit": 2.5,
+        "Count": 621.2142857143,
+        "Population": 18445222.0,
+        "Rate": 3.367875,
+        "CI.lower": 3.2389285714,
+        "CI.upper": 3.5144285714
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.2,
+        "Sample_Size": 6840.0,
+        "Low_Confidence_Limit": 2.9,
+        "High_Confidence_Limit": 3.5,
+        "Count": 621.2142857143,
+        "Population": 18445222.0,
+        "Rate": 3.367875,
+        "CI.lower": 3.2389285714,
+        "CI.upper": 3.5144285714
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.7,
+        "Sample_Size": 6840.0,
+        "Low_Confidence_Limit": 5.4,
+        "High_Confidence_Limit": 6.1,
+        "Count": 621.2142857143,
+        "Population": 18445222.0,
+        "Rate": 3.367875,
+        "CI.lower": 3.2389285714,
+        "CI.upper": 3.5144285714
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.3,
+        "Sample_Size": 6840.0,
+        "Low_Confidence_Limit": 3.0,
+        "High_Confidence_Limit": 3.6,
+        "Count": 621.2142857143,
+        "Population": 18445222.0,
+        "Rate": 3.367875,
+        "CI.lower": 3.2389285714,
+        "CI.upper": 3.5144285714
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.6,
+        "Sample_Size": 6840.0,
+        "Low_Confidence_Limit": 5.6,
+        "High_Confidence_Limit": 7.7,
+        "Count": 621.2142857143,
+        "Population": 18445222.0,
+        "Rate": 3.367875,
+        "CI.lower": 3.2389285714,
+        "CI.upper": 3.5144285714
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.1,
+        "Sample_Size": 6840.0,
+        "Low_Confidence_Limit": 7.9,
+        "High_Confidence_Limit": 10.4,
+        "Count": 621.2142857143,
+        "Population": 18445222.0,
+        "Rate": 3.367875,
+        "CI.lower": 3.2389285714,
+        "CI.upper": 3.5144285714
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 9.6,
+        "Sample_Size": 6840.0,
+        "Low_Confidence_Limit": 8.3,
+        "High_Confidence_Limit": 10.8,
+        "Count": 621.2142857143,
+        "Population": 18445222.0,
+        "Rate": 3.367875,
+        "CI.lower": 3.2389285714,
+        "CI.upper": 3.5144285714
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.3,
+        "Sample_Size": 6840.0,
+        "Low_Confidence_Limit": 16.8,
+        "High_Confidence_Limit": 20.0,
+        "Count": 621.2142857143,
+        "Population": 18445222.0,
+        "Rate": 3.367875,
+        "CI.lower": 3.2389285714,
+        "CI.upper": 3.5144285714
+      }
+    },
+    {
+      "Year": 2010,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.1,
+        "Sample_Size": 6656.0,
+        "Low_Confidence_Limit": 1.9,
+        "High_Confidence_Limit": 2.4,
+        "Count": 711.5084745763,
+        "Population": 18558691.0,
+        "Rate": 3.8337627119,
+        "CI.lower": 3.6993728814,
+        "CI.upper": 3.9856610169
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.2,
+        "Sample_Size": 6656.0,
+        "Low_Confidence_Limit": 2.9,
+        "High_Confidence_Limit": 3.4,
+        "Count": 711.5084745763,
+        "Population": 18558691.0,
+        "Rate": 3.8337627119,
+        "CI.lower": 3.6993728814,
+        "CI.upper": 3.9856610169
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 5.8,
+        "Sample_Size": 6656.0,
+        "Low_Confidence_Limit": 5.4,
+        "High_Confidence_Limit": 6.1,
+        "Count": 711.5084745763,
+        "Population": 18558691.0,
+        "Rate": 3.8337627119,
+        "CI.lower": 3.6993728814,
+        "CI.upper": 3.9856610169
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.3,
+        "Sample_Size": 6656.0,
+        "Low_Confidence_Limit": 3.0,
+        "High_Confidence_Limit": 3.6,
+        "Count": 711.5084745763,
+        "Population": 18558691.0,
+        "Rate": 3.8337627119,
+        "CI.lower": 3.6993728814,
+        "CI.upper": 3.9856610169
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.6,
+        "Sample_Size": 6656.0,
+        "Low_Confidence_Limit": 5.6,
+        "High_Confidence_Limit": 7.7,
+        "Count": 711.5084745763,
+        "Population": 18558691.0,
+        "Rate": 3.8337627119,
+        "CI.lower": 3.6993728814,
+        "CI.upper": 3.9856610169
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 9.5,
+        "Sample_Size": 6656.0,
+        "Low_Confidence_Limit": 8.2,
+        "High_Confidence_Limit": 10.8,
+        "Count": 711.5084745763,
+        "Population": 18558691.0,
+        "Rate": 3.8337627119,
+        "CI.lower": 3.6993728814,
+        "CI.upper": 3.9856610169
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 9.9,
+        "Sample_Size": 6656.0,
+        "Low_Confidence_Limit": 8.6,
+        "High_Confidence_Limit": 11.2,
+        "Count": 711.5084745763,
+        "Population": 18558691.0,
+        "Rate": 3.8337627119,
+        "CI.lower": 3.6993728814,
+        "CI.upper": 3.9856610169
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 16.6,
+        "Sample_Size": 6656.0,
+        "Low_Confidence_Limit": 15.1,
+        "High_Confidence_Limit": 18.2,
+        "Count": 711.5084745763,
+        "Population": 18558691.0,
+        "Rate": 3.8337627119,
+        "CI.lower": 3.6993728814,
+        "CI.upper": 3.9856610169
+      }
+    }
+  ],
+  "Overall": [
+    {
+      "Year": 2001,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.2,
+        "Sample_Size": 4205.0,
+        "Low_Confidence_Limit": 1.9,
+        "High_Confidence_Limit": 2.5,
+        "Count": 1041.2156862745,
+        "Population": 34514777.0,
+        "Rate": 3.0167647059,
+        "CI.lower": 2.9244313725,
+        "CI.upper": 3.1181960784
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.5,
+        "Sample_Size": 4205.0,
+        "Low_Confidence_Limit": 3.2,
+        "High_Confidence_Limit": 3.9,
+        "Count": 1041.2156862745,
+        "Population": 34514777.0,
+        "Rate": 3.0167647059,
+        "CI.lower": 2.9244313725,
+        "CI.upper": 3.1181960784
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.3,
+        "Sample_Size": 4205.0,
+        "Low_Confidence_Limit": 5.9,
+        "High_Confidence_Limit": 6.8,
+        "Count": 1041.2156862745,
+        "Population": 34514777.0,
+        "Rate": 3.0167647059,
+        "CI.lower": 2.9244313725,
+        "CI.upper": 3.1181960784
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.5,
+        "Sample_Size": 4205.0,
+        "Low_Confidence_Limit": 3.2,
+        "High_Confidence_Limit": 3.9,
+        "Count": 1041.2156862745,
+        "Population": 34514777.0,
+        "Rate": 3.0167647059,
+        "CI.lower": 2.9244313725,
+        "CI.upper": 3.1181960784
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.9,
+        "Sample_Size": 4205.0,
+        "Low_Confidence_Limit": 5.8,
+        "High_Confidence_Limit": 7.9,
+        "Count": 1041.2156862745,
+        "Population": 34514777.0,
+        "Rate": 3.0167647059,
+        "CI.lower": 2.9244313725,
+        "CI.upper": 3.1181960784
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 10.5,
+        "Sample_Size": 4205.0,
+        "Low_Confidence_Limit": 9.1,
+        "High_Confidence_Limit": 11.8,
+        "Count": 1041.2156862745,
+        "Population": 34514777.0,
+        "Rate": 3.0167647059,
+        "CI.lower": 2.9244313725,
+        "CI.upper": 3.1181960784
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 10.6,
+        "Sample_Size": 4205.0,
+        "Low_Confidence_Limit": 9.4,
+        "High_Confidence_Limit": 11.9,
+        "Count": 1041.2156862745,
+        "Population": 34514777.0,
+        "Rate": 3.0167647059,
+        "CI.lower": 2.9244313725,
+        "CI.upper": 3.1181960784
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 16.1,
+        "Sample_Size": 4205.0,
+        "Low_Confidence_Limit": 14.6,
+        "High_Confidence_Limit": 17.6,
+        "Count": 1041.2156862745,
+        "Population": 34514777.0,
+        "Rate": 3.0167647059,
+        "CI.lower": 2.9244313725,
+        "CI.upper": 3.1181960784
+      }
+    },
+    {
+      "Year": 2002,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.2,
+        "Sample_Size": 4197.0,
+        "Low_Confidence_Limit": 1.9,
+        "High_Confidence_Limit": 2.4,
+        "Count": 1102.3921568627,
+        "Population": 34940334.0,
+        "Rate": 3.1550980392,
+        "CI.lower": 3.0628039216,
+        "CI.upper": 3.2566666667
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.6,
+        "Sample_Size": 4197.0,
+        "Low_Confidence_Limit": 3.2,
+        "High_Confidence_Limit": 3.9,
+        "Count": 1102.3921568627,
+        "Population": 34940334.0,
+        "Rate": 3.1550980392,
+        "CI.lower": 3.0628039216,
+        "CI.upper": 3.2566666667
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.3,
+        "Sample_Size": 4197.0,
+        "Low_Confidence_Limit": 5.9,
+        "High_Confidence_Limit": 6.7,
+        "Count": 1102.3921568627,
+        "Population": 34940334.0,
+        "Rate": 3.1550980392,
+        "CI.lower": 3.0628039216,
+        "CI.upper": 3.2566666667
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.5,
+        "Sample_Size": 4197.0,
+        "Low_Confidence_Limit": 3.2,
+        "High_Confidence_Limit": 3.9,
+        "Count": 1102.3921568627,
+        "Population": 34940334.0,
+        "Rate": 3.1550980392,
+        "CI.lower": 3.0628039216,
+        "CI.upper": 3.2566666667
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.3,
+        "Sample_Size": 4197.0,
+        "Low_Confidence_Limit": 5.3,
+        "High_Confidence_Limit": 7.3,
+        "Count": 1102.3921568627,
+        "Population": 34940334.0,
+        "Rate": 3.1550980392,
+        "CI.lower": 3.0628039216,
+        "CI.upper": 3.2566666667
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 10.5,
+        "Sample_Size": 4197.0,
+        "Low_Confidence_Limit": 9.2,
+        "High_Confidence_Limit": 11.7,
+        "Count": 1102.3921568627,
+        "Population": 34940334.0,
+        "Rate": 3.1550980392,
+        "CI.lower": 3.0628039216,
+        "CI.upper": 3.2566666667
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 10.6,
+        "Sample_Size": 4197.0,
+        "Low_Confidence_Limit": 9.4,
+        "High_Confidence_Limit": 11.9,
+        "Count": 1102.3921568627,
+        "Population": 34940334.0,
+        "Rate": 3.1550980392,
+        "CI.lower": 3.0628039216,
+        "CI.upper": 3.2566666667
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 15.5,
+        "Sample_Size": 4197.0,
+        "Low_Confidence_Limit": 14.0,
+        "High_Confidence_Limit": 17.0,
+        "Count": 1102.3921568627,
+        "Population": 34940334.0,
+        "Rate": 3.1550980392,
+        "CI.lower": 3.0628039216,
+        "CI.upper": 3.2566666667
+      }
+    },
+    {
+      "Year": 2003,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.5,
+        "Sample_Size": 4409.0,
+        "Low_Confidence_Limit": 2.2,
+        "High_Confidence_Limit": 2.8,
+        "Count": 1085.6862745098,
+        "Population": 35390986.0,
+        "Rate": 3.0677843137,
+        "CI.lower": 2.9786862745,
+        "CI.upper": 3.1657843137
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.9,
+        "Sample_Size": 4409.0,
+        "Low_Confidence_Limit": 3.6,
+        "High_Confidence_Limit": 4.2,
+        "Count": 1085.6862745098,
+        "Population": 35390986.0,
+        "Rate": 3.0677843137,
+        "CI.lower": 2.9786862745,
+        "CI.upper": 3.1657843137
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.7,
+        "Sample_Size": 4409.0,
+        "Low_Confidence_Limit": 6.3,
+        "High_Confidence_Limit": 7.1,
+        "Count": 1085.6862745098,
+        "Population": 35390986.0,
+        "Rate": 3.0677843137,
+        "CI.lower": 2.9786862745,
+        "CI.upper": 3.1657843137
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.7,
+        "Sample_Size": 4409.0,
+        "Low_Confidence_Limit": 3.4,
+        "High_Confidence_Limit": 4.1,
+        "Count": 1085.6862745098,
+        "Population": 35390986.0,
+        "Rate": 3.0677843137,
+        "CI.lower": 2.9786862745,
+        "CI.upper": 3.1657843137
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 7.7,
+        "Sample_Size": 4409.0,
+        "Low_Confidence_Limit": 6.7,
+        "High_Confidence_Limit": 8.8,
+        "Count": 1085.6862745098,
+        "Population": 35390986.0,
+        "Rate": 3.0677843137,
+        "CI.lower": 2.9786862745,
+        "CI.upper": 3.1657843137
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 11.6,
+        "Sample_Size": 4409.0,
+        "Low_Confidence_Limit": 10.4,
+        "High_Confidence_Limit": 12.9,
+        "Count": 1085.6862745098,
+        "Population": 35390986.0,
+        "Rate": 3.0677843137,
+        "CI.lower": 2.9786862745,
+        "CI.upper": 3.1657843137
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 11.6,
+        "Sample_Size": 4409.0,
+        "Low_Confidence_Limit": 10.4,
+        "High_Confidence_Limit": 12.8,
+        "Count": 1085.6862745098,
+        "Population": 35390986.0,
+        "Rate": 3.0677843137,
+        "CI.lower": 2.9786862745,
+        "CI.upper": 3.1657843137
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 15.2,
+        "Sample_Size": 4409.0,
+        "Low_Confidence_Limit": 13.8,
+        "High_Confidence_Limit": 16.5,
+        "Count": 1085.6862745098,
+        "Population": 35390986.0,
+        "Rate": 3.0677843137,
+        "CI.lower": 2.9786862745,
+        "CI.upper": 3.1657843137
+      }
+    },
+    {
+      "Year": 2004,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.3,
+        "Sample_Size": 4419.0,
+        "Low_Confidence_Limit": 2.0,
+        "High_Confidence_Limit": 2.6,
+        "Count": 1183.8039215686,
+        "Population": 35754827.0,
+        "Rate": 3.3109215686,
+        "CI.lower": 3.2204901961,
+        "CI.upper": 3.4103137255
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.5,
+        "Sample_Size": 4419.0,
+        "Low_Confidence_Limit": 3.2,
+        "High_Confidence_Limit": 3.8,
+        "Count": 1183.8039215686,
+        "Population": 35754827.0,
+        "Rate": 3.3109215686,
+        "CI.lower": 3.2204901961,
+        "CI.upper": 3.4103137255
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.2,
+        "Sample_Size": 4419.0,
+        "Low_Confidence_Limit": 5.8,
+        "High_Confidence_Limit": 6.6,
+        "Count": 1183.8039215686,
+        "Population": 35754827.0,
+        "Rate": 3.3109215686,
+        "CI.lower": 3.2204901961,
+        "CI.upper": 3.4103137255
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.7,
+        "Sample_Size": 4419.0,
+        "Low_Confidence_Limit": 3.3,
+        "High_Confidence_Limit": 4.0,
+        "Count": 1183.8039215686,
+        "Population": 35754827.0,
+        "Rate": 3.3109215686,
+        "CI.lower": 3.2204901961,
+        "CI.upper": 3.4103137255
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.9,
+        "Sample_Size": 4419.0,
+        "Low_Confidence_Limit": 6.0,
+        "High_Confidence_Limit": 7.8,
+        "Count": 1183.8039215686,
+        "Population": 35754827.0,
+        "Rate": 3.3109215686,
+        "CI.lower": 3.2204901961,
+        "CI.upper": 3.4103137255
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 10.6,
+        "Sample_Size": 4419.0,
+        "Low_Confidence_Limit": 9.4,
+        "High_Confidence_Limit": 11.7,
+        "Count": 1183.8039215686,
+        "Population": 35754827.0,
+        "Rate": 3.3109215686,
+        "CI.lower": 3.2204901961,
+        "CI.upper": 3.4103137255
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 10.9,
+        "Sample_Size": 4419.0,
+        "Low_Confidence_Limit": 9.8,
+        "High_Confidence_Limit": 12.1,
+        "Count": 1183.8039215686,
+        "Population": 35754827.0,
+        "Rate": 3.3109215686,
+        "CI.lower": 3.2204901961,
+        "CI.upper": 3.4103137255
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 17.7,
+        "Sample_Size": 4419.0,
+        "Low_Confidence_Limit": 16.1,
+        "High_Confidence_Limit": 19.2,
+        "Count": 1183.8039215686,
+        "Population": 35754827.0,
+        "Rate": 3.3109215686,
+        "CI.lower": 3.2204901961,
+        "CI.upper": 3.4103137255
+      }
+    },
+    {
+      "Year": 2005,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.1,
+        "Sample_Size": 6003.0,
+        "Low_Confidence_Limit": 1.9,
+        "High_Confidence_Limit": 2.3,
+        "Count": 1313.5490196078,
+        "Population": 35987637.0,
+        "Rate": 3.6500196078,
+        "CI.lower": 3.5549019608,
+        "CI.upper": 3.7539019608
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.5,
+        "Sample_Size": 6003.0,
+        "Low_Confidence_Limit": 3.2,
+        "High_Confidence_Limit": 3.8,
+        "Count": 1313.5490196078,
+        "Population": 35987637.0,
+        "Rate": 3.6500196078,
+        "CI.lower": 3.5549019608,
+        "CI.upper": 3.7539019608
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.3,
+        "Sample_Size": 6003.0,
+        "Low_Confidence_Limit": 5.9,
+        "High_Confidence_Limit": 6.7,
+        "Count": 1313.5490196078,
+        "Population": 35987637.0,
+        "Rate": 3.6500196078,
+        "CI.lower": 3.5549019608,
+        "CI.upper": 3.7539019608
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.6,
+        "Sample_Size": 6003.0,
+        "Low_Confidence_Limit": 3.3,
+        "High_Confidence_Limit": 3.9,
+        "Count": 1313.5490196078,
+        "Population": 35987637.0,
+        "Rate": 3.6500196078,
+        "CI.lower": 3.5549019608,
+        "CI.upper": 3.7539019608
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 6.3,
+        "Sample_Size": 6003.0,
+        "Low_Confidence_Limit": 5.4,
+        "High_Confidence_Limit": 7.1,
+        "Count": 1313.5490196078,
+        "Population": 35987637.0,
+        "Rate": 3.6500196078,
+        "CI.lower": 3.5549019608,
+        "CI.upper": 3.7539019608
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 10.3,
+        "Sample_Size": 6003.0,
+        "Low_Confidence_Limit": 9.2,
+        "High_Confidence_Limit": 11.4,
+        "Count": 1313.5490196078,
+        "Population": 35987637.0,
+        "Rate": 3.6500196078,
+        "CI.lower": 3.5549019608,
+        "CI.upper": 3.7539019608
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 10.5,
+        "Sample_Size": 6003.0,
+        "Low_Confidence_Limit": 9.5,
+        "High_Confidence_Limit": 11.6,
+        "Count": 1313.5490196078,
+        "Population": 35987637.0,
+        "Rate": 3.6500196078,
+        "CI.lower": 3.5549019608,
+        "CI.upper": 3.7539019608
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 17.7,
+        "Sample_Size": 6003.0,
+        "Low_Confidence_Limit": 16.2,
+        "High_Confidence_Limit": 19.1,
+        "Count": 1313.5490196078,
+        "Population": 35987637.0,
+        "Rate": 3.6500196078,
+        "CI.lower": 3.5549019608,
+        "CI.upper": 3.7539019608
+      }
+    },
+    {
+      "Year": 2006,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.4,
+        "Sample_Size": 5638.0,
+        "Low_Confidence_Limit": 2.2,
+        "High_Confidence_Limit": 2.7,
+        "Count": 1283.2307692308,
+        "Population": 36248870.0,
+        "Rate": 3.5400961538,
+        "CI.lower": 3.4464807692,
+        "CI.upper": 3.6423269231
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.8,
+        "Sample_Size": 5638.0,
+        "Low_Confidence_Limit": 3.5,
+        "High_Confidence_Limit": 4.1,
+        "Count": 1283.2307692308,
+        "Population": 36248870.0,
+        "Rate": 3.5400961538,
+        "CI.lower": 3.4464807692,
+        "CI.upper": 3.6423269231
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.7,
+        "Sample_Size": 5638.0,
+        "Low_Confidence_Limit": 6.3,
+        "High_Confidence_Limit": 7.1,
+        "Count": 1283.2307692308,
+        "Population": 36248870.0,
+        "Rate": 3.5400961538,
+        "CI.lower": 3.4464807692,
+        "CI.upper": 3.6423269231
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.8,
+        "Sample_Size": 5638.0,
+        "Low_Confidence_Limit": 3.4,
+        "High_Confidence_Limit": 4.1,
+        "Count": 1283.2307692308,
+        "Population": 36248870.0,
+        "Rate": 3.5400961538,
+        "CI.lower": 3.4464807692,
+        "CI.upper": 3.6423269231
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 7.1,
+        "Sample_Size": 5638.0,
+        "Low_Confidence_Limit": 6.2,
+        "High_Confidence_Limit": 8.0,
+        "Count": 1283.2307692308,
+        "Population": 36248870.0,
+        "Rate": 3.5400961538,
+        "CI.lower": 3.4464807692,
+        "CI.upper": 3.6423269231
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 11.6,
+        "Sample_Size": 5638.0,
+        "Low_Confidence_Limit": 10.4,
+        "High_Confidence_Limit": 12.7,
+        "Count": 1283.2307692308,
+        "Population": 36248870.0,
+        "Rate": 3.5400961538,
+        "CI.lower": 3.4464807692,
+        "CI.upper": 3.6423269231
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 11.2,
+        "Sample_Size": 5638.0,
+        "Low_Confidence_Limit": 10.1,
+        "High_Confidence_Limit": 12.4,
+        "Count": 1283.2307692308,
+        "Population": 36248870.0,
+        "Rate": 3.5400961538,
+        "CI.lower": 3.4464807692,
+        "CI.upper": 3.6423269231
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 19.0,
+        "Sample_Size": 5638.0,
+        "Low_Confidence_Limit": 17.5,
+        "High_Confidence_Limit": 20.5,
+        "Count": 1283.2307692308,
+        "Population": 36248870.0,
+        "Rate": 3.5400961538,
+        "CI.lower": 3.4464807692,
+        "CI.upper": 3.6423269231
+      }
+    },
+    {
+      "Year": 2007,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 1.9,
+        "Sample_Size": 5616.0,
+        "Low_Confidence_Limit": 1.7,
+        "High_Confidence_Limit": 2.2,
+        "Count": 1163.9814814815,
+        "Population": 36554575.0,
+        "Rate": 3.1842407407,
+        "CI.lower": 3.0976481481,
+        "CI.upper": 3.2795925926
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.5,
+        "Sample_Size": 5616.0,
+        "Low_Confidence_Limit": 3.2,
+        "High_Confidence_Limit": 3.8,
+        "Count": 1163.9814814815,
+        "Population": 36554575.0,
+        "Rate": 3.1842407407,
+        "CI.lower": 3.0976481481,
+        "CI.upper": 3.2795925926
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.0,
+        "Sample_Size": 5616.0,
+        "Low_Confidence_Limit": 5.6,
+        "High_Confidence_Limit": 6.4,
+        "Count": 1163.9814814815,
+        "Population": 36554575.0,
+        "Rate": 3.1842407407,
+        "CI.lower": 3.0976481481,
+        "CI.upper": 3.2795925926
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.3,
+        "Sample_Size": 5616.0,
+        "Low_Confidence_Limit": 3.0,
+        "High_Confidence_Limit": 3.6,
+        "Count": 1163.9814814815,
+        "Population": 36554575.0,
+        "Rate": 3.1842407407,
+        "CI.lower": 3.0976481481,
+        "CI.upper": 3.2795925926
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 5.4,
+        "Sample_Size": 5616.0,
+        "Low_Confidence_Limit": 4.7,
+        "High_Confidence_Limit": 6.2,
+        "Count": 1163.9814814815,
+        "Population": 36554575.0,
+        "Rate": 3.1842407407,
+        "CI.lower": 3.0976481481,
+        "CI.upper": 3.2795925926
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 10.1,
+        "Sample_Size": 5616.0,
+        "Low_Confidence_Limit": 9.0,
+        "High_Confidence_Limit": 11.2,
+        "Count": 1163.9814814815,
+        "Population": 36554575.0,
+        "Rate": 3.1842407407,
+        "CI.lower": 3.0976481481,
+        "CI.upper": 3.2795925926
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 9.8,
+        "Sample_Size": 5616.0,
+        "Low_Confidence_Limit": 8.8,
+        "High_Confidence_Limit": 10.8,
+        "Count": 1163.9814814815,
+        "Population": 36554575.0,
+        "Rate": 3.1842407407,
+        "CI.lower": 3.0976481481,
+        "CI.upper": 3.2795925926
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 17.9,
+        "Sample_Size": 5616.0,
+        "Low_Confidence_Limit": 16.4,
+        "High_Confidence_Limit": 19.4,
+        "Count": 1163.9814814815,
+        "Population": 36554575.0,
+        "Rate": 3.1842407407,
+        "CI.lower": 3.0976481481,
+        "CI.upper": 3.2795925926
+      }
+    },
+    {
+      "Year": 2008,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.6,
+        "Sample_Size": 11401.0,
+        "Low_Confidence_Limit": 2.4,
+        "High_Confidence_Limit": 2.8,
+        "Count": 1040.8909090909,
+        "Population": 36858270.0,
+        "Rate": 2.8240363636,
+        "CI.lower": 2.7402363636,
+        "CI.upper": 2.9164545455
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.7,
+        "Sample_Size": 11401.0,
+        "Low_Confidence_Limit": 3.4,
+        "High_Confidence_Limit": 3.9,
+        "Count": 1040.8909090909,
+        "Population": 36858270.0,
+        "Rate": 2.8240363636,
+        "CI.lower": 2.7402363636,
+        "CI.upper": 2.9164545455
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.5,
+        "Sample_Size": 11401.0,
+        "Low_Confidence_Limit": 6.2,
+        "High_Confidence_Limit": 6.8,
+        "Count": 1040.8909090909,
+        "Population": 36858270.0,
+        "Rate": 2.8240363636,
+        "CI.lower": 2.7402363636,
+        "CI.upper": 2.9164545455
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.7,
+        "Sample_Size": 11401.0,
+        "Low_Confidence_Limit": 3.5,
+        "High_Confidence_Limit": 4.0,
+        "Count": 1040.8909090909,
+        "Population": 36858270.0,
+        "Rate": 2.8240363636,
+        "CI.lower": 2.7402363636,
+        "CI.upper": 2.9164545455
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 8.1,
+        "Sample_Size": 11401.0,
+        "Low_Confidence_Limit": 7.3,
+        "High_Confidence_Limit": 8.8,
+        "Count": 1040.8909090909,
+        "Population": 36858270.0,
+        "Rate": 2.8240363636,
+        "CI.lower": 2.7402363636,
+        "CI.upper": 2.9164545455
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 10.7,
+        "Sample_Size": 11401.0,
+        "Low_Confidence_Limit": 9.8,
+        "High_Confidence_Limit": 11.5,
+        "Count": 1040.8909090909,
+        "Population": 36858270.0,
+        "Rate": 2.8240363636,
+        "CI.lower": 2.7402363636,
+        "CI.upper": 2.9164545455
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 11.3,
+        "Sample_Size": 11401.0,
+        "Low_Confidence_Limit": 10.4,
+        "High_Confidence_Limit": 12.1,
+        "Count": 1040.8909090909,
+        "Population": 36858270.0,
+        "Rate": 2.8240363636,
+        "CI.lower": 2.7402363636,
+        "CI.upper": 2.9164545455
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.7,
+        "Sample_Size": 11401.0,
+        "Low_Confidence_Limit": 17.6,
+        "High_Confidence_Limit": 19.7,
+        "Count": 1040.8909090909,
+        "Population": 36858270.0,
+        "Rate": 2.8240363636,
+        "CI.lower": 2.7402363636,
+        "CI.upper": 2.9164545455
+      }
+    },
+    {
+      "Year": 2009,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.5,
+        "Sample_Size": 17180.0,
+        "Low_Confidence_Limit": 2.3,
+        "High_Confidence_Limit": 2.7,
+        "Count": 997.9642857143,
+        "Population": 37079253.0,
+        "Rate": 2.6914107143,
+        "CI.lower": 2.6074821429,
+        "CI.upper": 2.7839642857
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.7,
+        "Sample_Size": 17180.0,
+        "Low_Confidence_Limit": 3.5,
+        "High_Confidence_Limit": 3.9,
+        "Count": 997.9642857143,
+        "Population": 37079253.0,
+        "Rate": 2.6914107143,
+        "CI.lower": 2.6074821429,
+        "CI.upper": 2.7839642857
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.6,
+        "Sample_Size": 17180.0,
+        "Low_Confidence_Limit": 6.3,
+        "High_Confidence_Limit": 6.8,
+        "Count": 997.9642857143,
+        "Population": 37079253.0,
+        "Rate": 2.6914107143,
+        "CI.lower": 2.6074821429,
+        "CI.upper": 2.7839642857
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.8,
+        "Sample_Size": 17180.0,
+        "Low_Confidence_Limit": 3.6,
+        "High_Confidence_Limit": 4.0,
+        "Count": 997.9642857143,
+        "Population": 37079253.0,
+        "Rate": 2.6914107143,
+        "CI.lower": 2.6074821429,
+        "CI.upper": 2.7839642857
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 7.5,
+        "Sample_Size": 17180.0,
+        "Low_Confidence_Limit": 6.7,
+        "High_Confidence_Limit": 8.3,
+        "Count": 997.9642857143,
+        "Population": 37079253.0,
+        "Rate": 2.6914107143,
+        "CI.lower": 2.6074821429,
+        "CI.upper": 2.7839642857
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 11.0,
+        "Sample_Size": 17180.0,
+        "Low_Confidence_Limit": 10.1,
+        "High_Confidence_Limit": 12.0,
+        "Count": 997.9642857143,
+        "Population": 37079253.0,
+        "Rate": 2.6914107143,
+        "CI.lower": 2.6074821429,
+        "CI.upper": 2.7839642857
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 11.7,
+        "Sample_Size": 17180.0,
+        "Low_Confidence_Limit": 10.7,
+        "High_Confidence_Limit": 12.6,
+        "Count": 997.9642857143,
+        "Population": 37079253.0,
+        "Rate": 2.6914107143,
+        "CI.lower": 2.6074821429,
+        "CI.upper": 2.7839642857
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 19.6,
+        "Sample_Size": 17180.0,
+        "Low_Confidence_Limit": 18.5,
+        "High_Confidence_Limit": 20.8,
+        "Count": 997.9642857143,
+        "Population": 37079253.0,
+        "Rate": 2.6914107143,
+        "CI.lower": 2.6074821429,
+        "CI.upper": 2.7839642857
+      }
+    },
+    {
+      "Year": 2010,
+      "Mean_days_of_activity_limitation": {
+        "Data_Value": 2.4,
+        "Sample_Size": 16922.0,
+        "Low_Confidence_Limit": 2.2,
+        "High_Confidence_Limit": 2.6,
+        "Count": 1173.5254237288,
+        "Population": 37311439.0,
+        "Rate": 3.1452711864,
+        "CI.lower": 3.0576440678,
+        "CI.upper": 3.2413898305
+      },
+      "Mean_mentally_unhealthy_days": {
+        "Data_Value": 3.7,
+        "Sample_Size": 16922.0,
+        "Low_Confidence_Limit": 3.5,
+        "High_Confidence_Limit": 3.9,
+        "Count": 1173.5254237288,
+        "Population": 37311439.0,
+        "Rate": 3.1452711864,
+        "CI.lower": 3.0576440678,
+        "CI.upper": 3.2413898305
+      },
+      "Mean_physically_or_mentally_unhealthy_days": {
+        "Data_Value": 6.5,
+        "Sample_Size": 16922.0,
+        "Low_Confidence_Limit": 6.2,
+        "High_Confidence_Limit": 6.7,
+        "Count": 1173.5254237288,
+        "Population": 37311439.0,
+        "Rate": 3.1452711864,
+        "CI.lower": 3.0576440678,
+        "CI.upper": 3.2413898305
+      },
+      "Mean_physically_unhealthy_days": {
+        "Data_Value": 3.7,
+        "Sample_Size": 16922.0,
+        "Low_Confidence_Limit": 3.5,
+        "High_Confidence_Limit": 3.9,
+        "Count": 1173.5254237288,
+        "Population": 37311439.0,
+        "Rate": 3.1452711864,
+        "CI.lower": 3.0576440678,
+        "CI.upper": 3.2413898305
+      },
+      "Percentage_with_14_or_more_activity_limitation_days": {
+        "Data_Value": 7.4,
+        "Sample_Size": 16922.0,
+        "Low_Confidence_Limit": 6.6,
+        "High_Confidence_Limit": 8.2,
+        "Count": 1173.5254237288,
+        "Population": 37311439.0,
+        "Rate": 3.1452711864,
+        "CI.lower": 3.0576440678,
+        "CI.upper": 3.2413898305
+      },
+      "Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)": {
+        "Data_Value": 11.0,
+        "Sample_Size": 16922.0,
+        "Low_Confidence_Limit": 10.1,
+        "High_Confidence_Limit": 12.0,
+        "Count": 1173.5254237288,
+        "Population": 37311439.0,
+        "Rate": 3.1452711864,
+        "CI.lower": 3.0576440678,
+        "CI.upper": 3.2413898305
+      },
+      "Percentage_with_14_or_more_physically_unhealthy_days": {
+        "Data_Value": 10.9,
+        "Sample_Size": 16922.0,
+        "Low_Confidence_Limit": 10.0,
+        "High_Confidence_Limit": 11.9,
+        "Count": 1173.5254237288,
+        "Population": 37311439.0,
+        "Rate": 3.1452711864,
+        "CI.lower": 3.0576440678,
+        "CI.upper": 3.2413898305
+      },
+      "Percentage_with_fair_or_poor_self-rated_health": {
+        "Data_Value": 18.1,
+        "Sample_Size": 16922.0,
+        "Low_Confidence_Limit": 17.0,
+        "High_Confidence_Limit": 19.2,
+        "Count": 1173.5254237288,
+        "Population": 37311439.0,
+        "Rate": 3.1452711864,
+        "CI.lower": 3.0576440678,
+        "CI.upper": 3.2413898305
+      }
+    }
+  ]
+}
