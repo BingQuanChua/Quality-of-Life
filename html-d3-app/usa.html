@@ -140,7 +140,7 @@
       let selectedYear; // selected year
 
       // loading data
-      d3.json("dataset/topojson/counties-albers-10m.json").then(function (
+      d3.json("../dataset/topojson/counties-albers-10m.json").then(function (
         data,
         error
       ) {
@@ -151,7 +151,7 @@
           // countyData = topojson.feature(data, data.objects.counties).features;
           stateData = topojson.feature(data, data.objects.states).features;
 
-          d3.csv("dataset/health-related-quality-of-life/rows.csv").then(
+          d3.csv("../dataset/health-related-quality-of-life/rows.csv").then(
             function (data, error) {
               if (error) {
                 console.log(log);

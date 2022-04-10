@@ -234,7 +234,7 @@
       let selectedYear; // selected year
 
       // loading data
-      d3.json("dataset/topojson/counties-albers-10m.json").then(function (
+      d3.json("../dataset/topojson/counties-albers-10m.json").then(function (
         data,
         error
       ) {
@@ -314,7 +314,7 @@
             }
           }
 
-          d3.csv("dataset/infectious-disease-2001-2014/rows.csv").then(
+          d3.csv("../dataset/infectious-disease-2001-2014/rows.csv").then(
             function (data, error) {
               if (error) {
                 console.log(log);
