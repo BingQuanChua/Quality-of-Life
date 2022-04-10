@@ -1,12 +1,12 @@
-
 import React from 'react';
-import DemoChart from './components/DemoChart';
+
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <div>
-        <DemoChart/>
+        <Navbar/>
       </div>
     </div>
   );
