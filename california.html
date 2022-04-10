@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>US Choropleth Map</title>
+    <title>California Choropleth Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
@@ -134,16 +134,14 @@
       <option>2001</option>
     </select>
     <svg id="canvas"></svg>
-    <svg id="legends"></svg>
     <script>
       let canvas = d3.select("#canvas");
-      let legends = d3.select("#legends");
 
       // color
-      var domain = [1, 2, 3, 4, 5];
-      var labels = ["", "", "", "", ""];
-      var range = ["#f9d186", "#f0be72", "#eeb549", "#f2a81d", "#e19506"];
-      var colorScale = d3.scaleThreshold().domain(domain).range(range);
+      var color = d3
+        .scaleLinear()
+        .range(["	#f9d186", "#e19506"])
+        .interpolate(d3.interpolateLab);
 
       // div for the tooltip
       var tooltip = d3
@@ -153,7 +151,10 @@
         .attr("id", "tooltip")
         .style("opacity", 0);
 
+      // draw the map!
       function drawMap() {
+        smallest_value = Math.floor(d3.min(displayingValues));
+
         canvas
           .selectAll("path")
           .data(californiaData)
@@ -177,12 +178,12 @@
             });
             let count = countyObj["Count"];
             let population = countyObj["Population"];
-            let rate = countyObj["Rate"]
+            let rate = countyObj["Rate"];
             tooltip.html(
-              `<strong>${countyname}</strong>` + 
-              `<div>Count: ${count}</div>` +
-              `<div>Population: ${population}</div>` +
-              `<div>Rate: ${rate} (per 100k population) </div>`
+              `<strong>${countyname}</strong>` +
+                `<div>Rate: ${rate} (per 100k population) </div>` +
+                `<div>Population: ${population}</div>` +
+                `<div>Count: ${count}</div>`
             );
           })
           .on("mouseout", function (event, countyDataItem) {
@@ -193,45 +194,25 @@
             let countyObj = diseaseDataSubset.find(function (item) {
               return item["County"] === countyname;
             });
-            let count = countyObj["Count"]; 
-            return colorScale(count);
+            let value = countyObj["Rate"];
+            return color(value - smallest_value);
           })
-          .attr("state", function (countyDataItem) {
+          .attr("county", function (countyDataItem) {
             return countyDataItem["properties"]["name"];
-          })
-          .attr("value", function (countyDataItem) {
-            let countyname = countyDataItem["properties"]["name"];
-            let countyObj = diseaseDataSubset.find(function (item) {
-              return item["County"] === countyname;
-            });
-            let count = countyObj["Count"];
-            return colorScale(count);
           });
       }
 
-      // legend
-      legends
-        .append("g")
-        .attr("class", "legend")
-        // .attr("transform", "translate(" + 50 + "," + 30 + ")");
-        .attr("transform", "translate(100,100), rotate(-90)");
+      var countyData; // data for drawing counties
+      var californiaData; // data for drawing california counties
 
-      var legend = d3
-        .legendColor()
-        .labels(labels)
-        // .title("Value")
-        .scale(colorScale);
+      var diseaseData; // infectious disease csv data
+      var diseaseDataSubset; // subset of disease data
 
-      legends.select(".legend").call(legend);
+      var selectedDisease; // selected infectious disease type
+      var selectedYear; // selected year
+      var displayingValues = []; // list of displaying values
 
-      let countyData; // data for drawing counties
-      let californiaData; // data for drawing california counties
-
-      let diseaseData; // infectious disease csv data
-      let diseaseDataSubset; // subset of disease data
-
-      let selectedDisease; // selected infectious disease type
-      let selectedYear; // selected year
+      var smallest_value;
 
       // loading data
       d3.json("dataset/topojson/counties-albers-10m.json").then(function (
@@ -334,7 +315,12 @@
                   );
                 });
 
-                setNewColorScale();
+                displayingValues = []; // resets
+                diseaseDataSubset.forEach(function (d) {
+                  displayingValues.push(+d.Rate);
+                });
+
+                drawlegend();
                 drawMap();
               }
             }
@@ -345,6 +331,9 @@
       // drop down selection (disease)
       d3.select("#qDisease").on("change", function (event, d) {
         d3.selectAll("path").remove();
+        d3.selectAll("rect").remove();
+        d3.selectAll("text").remove();
+        d3.selectAll("g").remove();
         selectedDisease = document.getElementById("qDisease").value;
 
         diseaseDataSubset = diseaseData.filter(function (item) {
@@ -355,14 +344,22 @@
             item["Sex"] === "Total" // both female and male
           );
         });
-        
-        setNewColorScale();
+
+        displayingValues = []; // resets
+        diseaseDataSubset.forEach(function (d) {
+          displayingValues.push(+d.Rate);
+        });
+
+        drawlegend();
         drawMap();
       });
 
       // drop down selection (year)
       d3.select("#qYear").on("change", function (event, d) {
         d3.selectAll("path").remove();
+        d3.selectAll("rect").remove();
+        d3.selectAll("text").remove();
+        d3.selectAll("g").remove();
         selectedYear = document.getElementById("qYear").value;
 
         diseaseDataSubset = diseaseData.filter(function (item) {
@@ -373,32 +370,82 @@
           );
         });
 
-        setNewColorScale();
+        displayingValues = []; // resets
+        diseaseDataSubset.forEach(function (d) {
+          displayingValues.push(+d.Rate);
+        });
+
+        drawlegend();
         drawMap();
       });
 
-      function setNewColorScale() {
-        let min = 0;
-        let max = d3.max(
-          diseaseDataSubset.map(function (d) {
-            return +d.Count;
+      // function to draw and set legend
+      function drawlegend() {
+        var legend_width = 200,
+          divisions = 100;
+        smallest_value = Math.floor(d3.min(displayingValues));
+        var largest_value = Math.floor(d3.max(displayingValues));
+
+        var newData = []; // to int data step
+        if (largest_value == smallest_value) {
+          newData.push(largest_value);
+        } else {
+          for (var i = smallest_value; i < largest_value; i += 0.5) {
+            newData.push(i);
+          }
+        }
+        var sectionWidth = Math.floor(120 / newData.length) * 2;
+
+        var legend = canvas
+          .append("g")
+          .attr("width", 400)
+          .attr("length", 400)
+          .attr("class", "legend")
+          .attr("transform", "translate(680,60)");
+
+        legend
+          .selectAll("rect")
+          .data(newData)
+          .enter()
+          .append("rect")
+          .attr("x", function (d) {
+            return (d - smallest_value) * sectionWidth;
           })
-        );
-        let mid = (min + max) / 2;
-        let mid25 = (min + mid) / 2;
-        let mid75 = (mid + max) / 2;
-        domain = [min, mid25, mid, mid75, max];
-        // range = [];
+          .attr("y", 10)
+          .attr("height", 15)
+          .attr("width", sectionWidth / 2)
+          .attr("fill", function (d) {
+            return color(d - smallest_value);
+          });
 
-        // for (var i=0; i < domain.length; i++) {
-        //   range.push(domain[i].toString());
-        // }
-        
-        console.log(diseaseDataSubset)
-        colorScale = d3.scaleThreshold().domain(domain).range(range);
-        console.log(domain)
+        if (largest_value != smallest_value) {
+          legend
+            .append("text")
+            .text(function () {
+              return d3.min(newData);
+            })
+            .attr("transform", "translate(0,0)")
+            .style("font-size", "13px");
+          legend
+            .append("text")
+            .text(function () {
+              return d3.max(newData) + "+";
+            })
+            .attr("transform", "translate(100,0)")
+            .style("font-size", "13px");
+        } else {
+          legend
+            .append("text")
+            .text("No data")
+            .attr("transform", "translate(40,0)")
+            .style("font-size", "13px");
+        }
+        legend
+          .append("text")
+          .text("Rate")
+          .attr("transform", "translate(50,50)")
+          .style("font-size", "13px");
       }
-
     </script>
   </body>
 </html>
