@@ -26,7 +26,7 @@
       <option>Percentage with fair or poor self-rated health</option>
     </select>
     Year
-    <select id="yearSelection">
+    <select id="ySelection">
       <option>2010</option>
       <option>2009</option>
       <option>2008</option>
@@ -47,16 +47,15 @@
       <option>1993</option>
     </select>
     <svg id="canvas"></svg>
-    <svg id="legends"></svg>
     <script>
-      let canvas = d3.select("#canvas");
-      let legends = d3.select("#legends");
 
+      let canvas = d3.select("#canvas");
+      
       // color
-      var domain = [1, 2, 3, 4, 5];
-      var labels = ["", "", "", "", ""];
-      var range = ["#84a6df", "#5084cc", "#3e67bf", "#404eb8", "#393196"];
-      var colorScale = d3.scaleThreshold().domain(domain).range(range);
+      var color = d3
+        .scaleLinear()
+        .range(["#d0f5fc", "#0096fe"])
+        .interpolate(d3.interpolateLab);
 
       // div for the tooltip
       var tooltip = d3
@@ -66,7 +65,11 @@
         .attr("id", "tooltip")
         .style("opacity", 0);
 
+      // draw the map!
       function drawMap() {
+
+        smallest_value = Math.floor(d3.min(displayingValues));
+
         canvas
           .selectAll("path")
           .data(stateData)
@@ -88,10 +91,13 @@
             });
             let value = object["Data_Value"];
             let unit = object["Data_Value_Unit"];
+            if (value == "") {
+              value = "<strong>No data</stong>"
+            }
             tooltip.html(
-              `<strong>${statename}</strong>` + 
-              `<div>${selectedQuestion}: ${value} ${unit}</div>`
-            ); 
+              `<strong>${statename}</strong>` +
+                `<div>${selectedQuestion}: ${value} ${unit}</div>`
+            );
           })
           .on("mouseout", function (event, stateDataItem) {
             tooltip.transition().style("visibility", "hidden");
@@ -101,43 +107,23 @@
             let value = healthDataSubset.find(function (item) {
               return item["LocationDesc"] === statename;
             })["Data_Value"];
-            return colorScale(value);
+            return color(value-smallest_value);
           })
           .attr("state", function (stateDataItem) {
             return stateDataItem["properties"]["name"];
-          })
-          .attr("value", function (stateDataItem) {
-            let statename = stateDataItem["properties"]["name"];
-            let value = healthDataSubset.find(function (item) {
-              return item["LocationDesc"] === statename;
-            })["Data_Value"];
-            return value;
           });
       }
 
-      // legend
-      legends
-        .append("g")
-        .attr("class", "legend")
-        // .attr("transform", "translate(" + 50 + "," + 30 + ")");
-        .attr("transform", "translate(100,100), rotate(-90)");
+      var stateData; // data for drawing states
 
-      var legend = d3
-        .legendColor()
-        .labels(labels)
-        // .title("Value")
-        .scale(colorScale);
+      var healthData; // quality of life csv data
+      var healthDataSubset; // subset of health data
 
-      legends.select(".legend").call(legend);
+      var selectedQuestion; // selected question type
+      var selectedYear; // selected year
+      var displayingValues = []; // list of displaying values
 
-      let countyData; // data for drawing counties
-      let stateData; // data for drawing states
-
-      let healthData; // quality of life csv data
-      let healthDataSubset; // subset of health data
-
-      let selectedQuestion; // selected question type
-      let selectedYear; // selected year
+      var smallest_value;
 
       // loading data
       d3.json("../dataset/topojson/counties-albers-10m.json").then(function (
@@ -148,7 +134,6 @@
           console.log(log);
         } else {
           // converts topojson into geojson format
-          // countyData = topojson.feature(data, data.objects.counties).features;
           stateData = topojson.feature(data, data.objects.states).features;
 
           d3.csv("../dataset/health-related-quality-of-life/rows.csv").then(
@@ -170,7 +155,12 @@
                   );
                 });
 
-                setNewColorScale();
+                displayingValues = []; // resets
+                healthDataSubset.forEach(function (d) {
+                  displayingValues.push(+d.Data_Value);
+                });
+
+                drawlegend();
                 drawMap();
               }
             }
@@ -181,6 +171,9 @@
       // drop down selection (question)
       d3.select("#qSelection").on("change", function (event, d) {
         d3.selectAll("path").remove();
+        d3.selectAll("rect").remove();
+        d3.selectAll("text").remove();
+        d3.selectAll("g").remove();
         selectedQuestion = document.getElementById("qSelection").value;
 
         healthDataSubset = healthData.filter(function (item) {
@@ -191,14 +184,22 @@
           );
         });
 
-        setNewColorScale();
+        displayingValues = []; // resets
+        healthDataSubset.forEach(function (d) {
+          displayingValues.push(+d.Data_Value);
+        });
+
+        drawlegend();
         drawMap();
       });
 
       // drop down selection (year)
-      d3.select("#yearSelection").on("change", function (event, d) {
+      d3.select("#ySelection").on("change", function (event, d) {
         d3.selectAll("path").remove();
-        selectedYear = document.getElementById("yearSelection").value;
+        d3.selectAll("rect").remove();
+        d3.selectAll("text").remove();
+        d3.selectAll("g").remove();
+        selectedYear = document.getElementById("ySelection").value;
 
         healthDataSubset = healthData.filter(function (item) {
           return (
@@ -208,31 +209,70 @@
           );
         });
 
-        setNewColorScale();
+        displayingValues = []; // resets
+        healthDataSubset.forEach(function (d) {
+          displayingValues.push(+d.Data_Value);
+        });
+
+        console.log(displayingValues);
+
+        drawlegend();
         drawMap();
       });
 
-      function setNewColorScale() {
-        let min = 0;
-        let max = d3.max(
-          healthDataSubset.map(function (d) {
-            return +d.Data_Value;
+      // function to draw and set legend
+      function drawlegend() {
+        var legend_width = 200, divisions = 100;
+        smallest_value = Math.floor(d3.min(displayingValues));
+        console.log("Smallest " + smallest_value)
+        var newData = []; // to int data step
+        for (var i = smallest_value; i < d3.max(displayingValues); i += 0.5) {
+          newData.push(i);
+        }
+        var sectionWidth = Math.floor(120 / newData.length) * 2;
+
+        var legend = canvas
+          .append("g")
+          .attr("width", 400)
+          .attr("length", 400)
+          .attr("class", "legend")
+          .attr("transform", "translate(680,60)");
+
+        legend
+          .selectAll("rect")
+          .data(newData)
+          .enter()
+          .append("rect")
+          .attr("x", function (d) {
+            return (d-smallest_value) * sectionWidth;
           })
-        );
-        let mid = (min + max) / 2;
-        let mid25 = (min + mid) / 2;
-        let mid75 = (mid + max) / 2;
-        domain = [min, mid25, mid, mid75, max];
-        // range = [];
+          .attr("y", 10)
+          .attr("height", 15)
+          .attr("width", sectionWidth/2)
+          .attr("fill", function (d) {
+            return color(d-smallest_value);
+          });
 
-        // for (var i=0; i < domain.length; i++) {
-        //   range.push(domain[i].toString());
-        // }
-
-        colorScale = d3.scaleThreshold().domain(domain).range(range);
-        console.log(domain)
+        legend
+          .append("text")
+          .text(function () {
+            return d3.min(newData);
+          })
+          .attr("transform", "translate(0,0)")
+          .style("font-size", "13px");
+        legend
+          .append("text")
+          .text(function () {
+            return d3.max(newData) + "+";
+          })
+          .attr("transform", "translate(100,0)")
+          .style("font-size", "13px");
+        legend
+          .append("text")
+          .text("Value")
+          .attr("transform", "translate(40,-20)")
+          .style("font-size", "13px");
       }
-      
     </script>
   </body>
 </html>
