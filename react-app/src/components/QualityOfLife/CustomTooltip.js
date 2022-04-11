@@ -7,7 +7,7 @@ export default function CustomTooltip ({ active, payload, label }) {
     // console.log(data_QOL_YQB[label][payload[0].name])
     return (
       <div className="custom-tooltip">
-        <p className="label">{`${label}`}</p>
+        <p className="label">{`${label}: ${payload[0].value}`}</p>
         <PieRecharts year={label} question={payload[0].name}/>
       </div>
     );

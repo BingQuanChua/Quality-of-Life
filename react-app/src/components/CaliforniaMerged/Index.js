@@ -23,6 +23,11 @@ export default function QualityOfLife() {
         justifyContent="center"
         alignItems="center"
       >
+        <Grid item sm={12}>
+          <h1 style={{marginLeft:5, marginTop: 5}}>
+            Rate of Infectious Diseases Against Quality Of Life
+          </h1>
+        </Grid>
         <Grid item xs={12}>      
           <ScatterRecharts 
             cusWidth={800}
@@ -30,20 +35,20 @@ export default function QualityOfLife() {
           />
         </Grid>
 
-        <Grid item xs={12}>
-          <h3>However</h3>
-          <div>
+        <Grid item xs={12} style={{backgroundColor: "#eee", marginTop: 10}}>
+          <h3 style={{marginLeft:15}}>However</h3>
+          <div style={{marginLeft:15}}>
             Don't let imbalanced data deceives you
           </div>
         </Grid>
-        <Grid item md={6}>
-          <h3>Data Without Chlamydia</h3>
+        <Grid item xs={12} md={6}>
+          <h3 style={{marginLeft:15}}>Data Without Chlamydia</h3>
           <ScatterRecharts 
             cusWidth={500}
             data={dataCalifornia_SY_No_CAL}
           />
         </Grid>
-        <Grid item md={6}>
+        <Grid item xs={12} md={6}>
         <h3>Data With Only Chlamydia</h3>
           <ScatterRecharts 
             cusWidth={500}

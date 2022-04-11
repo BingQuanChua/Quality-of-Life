@@ -23,8 +23,10 @@ export default function ScatterRecharts ({data, cusWidth}) {
         }}
       >
         <CartesianGrid />
-        <XAxis type="number" dataKey="Mean_days_of_activity_limitation.Data_Value" name="Health Data Value" unit="" />
-        <YAxis type="number" dataKey="Mean_days_of_activity_limitation.Rate" name="Infectious Rate" unit="" />
+        <XAxis type="number" dataKey="Mean_days_of_activity_limitation.Data_Value" name="Health Data Value" unit="" 
+               label={{ value: 'Average Days', angle: 0, position: 'insideBottom' }}/>
+        <YAxis type="number" dataKey="Mean_days_of_activity_limitation.Rate" name="Infectious Rate" unit="" 
+               label={{ value: 'Infectious Rate', angle: -90, position: 'Center' }}/>
         <ZAxis type="number" dataKey="Mean_days_of_activity_limitation.Sample_Size" range={[60, 400]} name="Sample Size" unit="" />
         <Tooltip cursor={{ strokeDasharray: '3 3' }} />
         <Legend />

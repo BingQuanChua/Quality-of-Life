@@ -29,12 +29,21 @@ const CustomizedDot = (props) => {
 export default function InfectiousDisease() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={1}> 
+      <Grid container spacing={1}>
+        <Grid item sm={12} style={{marginLeft:5}}>
+          <h1 style={{marginTop: 5}}>
+            Rate of Infectious Diseases Over Years
+          </h1>
+          <p>
+            Note: Only data with count &#62; 20 will be marked with a smily face, 
+            indicating that the records is stable due to sufficient records of data
+          </p>
+        </Grid>  
         {
           Object.keys(dataIDCalifornia).map((disease)=>{
             return (
-              <Grid item xs={6} sm={4}>
-                {disease}
+              <Grid item xs={12} sm={6} md={4}>
+                <div style={{marginLeft:5}}>{disease}</div>
                 <LineChart
                   width={300}
                   height={200}

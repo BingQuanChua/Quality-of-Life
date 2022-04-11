@@ -1,7 +1,10 @@
 /* Navigation bar */
 
 #navbar nav {
-  margin-bottom: 20;
+  /* margin-bottom: 20; */
+  margin: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 #navbar ul {
@@ -10,6 +13,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: 35;
 }
 
 #navbar li {
@@ -19,5 +23,5 @@
 #navbar li a {
   display: block;
   padding: 8px;
-  background-color: #dddddd;
+  float: none;
 }
