@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <title>US Choropleth Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
     <script src="//d3js.org/topojson.v1.min.js"></script>
@@ -71,11 +74,13 @@
         <option>1993</option>
       </select>
       <svg id="canvas"></svg>
+      <br>
+      <br>
+      <br>
     </div>
     <script>
-
       let canvas = d3.select("#canvas");
-      
+
       // color
       var color = d3
         .scaleLinear()
@@ -92,7 +97,7 @@
 
       // draw the map!
       function drawMap() {
-
+        
         smallest_value = Math.floor(d3.min(displayingValues));
 
         canvas
@@ -116,13 +121,20 @@
             });
             let value = object["Data_Value"];
             let unit = object["Data_Value_Unit"];
+            
             if (value == "") {
-              value = "<strong>No data</stong>"
+              value = "<strong>No data</stong>";
+              tooltip.html(
+                `<strong>${statename}</strong>` +
+                  `<div>${selectedQuestion}: ${value}</div>`
+              );
+            } else {
+              value = parseFloat(value).toFixed(1);
+              tooltip.html(
+                `<strong>${statename}</strong>` +
+                  `<div>${selectedQuestion}: ${value} ${unit}</div>`
+              );
             }
-            tooltip.html(
-              `<strong>${statename}</strong>` +
-                `<div>${selectedQuestion}: ${value} ${unit}</div>`
-            );
           })
           .on("mouseout", function (event, stateDataItem) {
             tooltip.transition().style("visibility", "hidden");
@@ -132,7 +144,10 @@
             let value = healthDataSubset.find(function (item) {
               return item["LocationDesc"] === statename;
             })["Data_Value"];
-            return color(value-smallest_value);
+            if (value == "") {
+              return '#000000';
+            }
+            return color(value - smallest_value);
           })
           .attr("state", function (stateDataItem) {
             return stateDataItem["properties"]["name"];
@@ -161,35 +176,40 @@
           // converts topojson into geojson format
           stateData = topojson.feature(data, data.objects.states).features;
 
-          d3.csv("./health-related-quality-of-life/rows.csv").then(
-            function (data, error) {
-              if (error) {
-                console.log(log);
-              } else {
-                healthData = data;
+          d3.csv("./health-related-quality-of-life/rows.csv").then(function (
+            data,
+            error
+          ) {
+            if (error) {
+              console.log(log);
+            } else {
+              healthData = data;
 
-                // initial state
-                selectedQuestion = "Mean days of activity limitation";
-                selectedYear = "2010";
+              // initial state
+              selectedQuestion = "Mean days of activity limitation";
+              selectedYear = "2010";
 
-                healthDataSubset = healthData.filter(function (item) {
-                  return (
-                    item["Question"] === selectedQuestion &&
-                    item["Break_Out_Category"] === "Overall" &&
-                    item["Year"] === selectedYear
-                  );
-                });
+              healthDataSubset = healthData.filter(function (item) {
+                return (
+                  item["Question"] === selectedQuestion &&
+                  item["Break_Out_Category"] === "Overall" &&
+                  item["Year"] === selectedYear
+                );
+              });
 
-                displayingValues = []; // resets
-                healthDataSubset.forEach(function (d) {
+              displayingValues = []; // resets
+              healthDataSubset.forEach(function (d) {
+                if (+d.Data_Value == "") {
+                  displayingValues.push(-1);
+                } else {
                   displayingValues.push(+d.Data_Value);
-                });
+                }
+              });
 
-                drawlegend();
-                drawMap();
-              }
+              drawlegend();
+              drawMap();
             }
-          );
+          });
         }
       });
 
@@ -211,7 +231,11 @@
 
         displayingValues = []; // resets
         healthDataSubset.forEach(function (d) {
-          displayingValues.push(+d.Data_Value);
+          if (+d.Data_Value == "") {
+            displayingValues.push(-1);
+          } else {
+            displayingValues.push(+d.Data_Value);
+          }
         });
 
         drawlegend();
@@ -236,10 +260,12 @@
 
         displayingValues = []; // resets
         healthDataSubset.forEach(function (d) {
-          displayingValues.push(+d.Data_Value);
+          if (+d.Data_Value == "") {
+            displayingValues.push(-1);
+          } else {
+            displayingValues.push(+d.Data_Value);
+          }
         });
-
-        console.log(displayingValues);
 
         drawlegend();
         drawMap();
@@ -247,14 +273,25 @@
 
       // function to draw and set legend
       function drawlegend() {
-        var legend_width = 200, divisions = 100;
+        var legend_width = 200,
+          divisions = 100;
+
         smallest_value = Math.floor(d3.min(displayingValues));
-        console.log("Smallest " + smallest_value)
+
+        // there is null value
+        if (smallest_value == -1) {
+          displayingValues = displayingValues.filter(function (value, index, arr) {
+            return value > -1;
+          });
+          // reselect a smallest value
+          smallest_value = Math.floor(d3.min(displayingValues));
+        }
+
         var newData = []; // to int data step
         for (var i = smallest_value; i < d3.max(displayingValues); i += 0.5) {
           newData.push(i);
         }
-        var sectionWidth = Math.floor(120 / newData.length) * 2;
+        var sectionWidth = (120 / newData.length) * 2;
 
         var legend = canvas
           .append("g")
@@ -269,13 +306,13 @@
           .enter()
           .append("rect")
           .attr("x", function (d) {
-            return (d-smallest_value) * sectionWidth;
+            return (d - smallest_value) * sectionWidth;
           })
           .attr("y", 10)
           .attr("height", 15)
-          .attr("width", sectionWidth/2)
+          .attr("width", sectionWidth / 2)
           .attr("fill", function (d) {
-            return color(d-smallest_value);
+            return color(d - smallest_value);
           });
 
         legend
