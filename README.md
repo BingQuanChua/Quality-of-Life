@@ -2,6 +2,14 @@
 
 # The Impact of Quality of Life on Infectious Diseases
 
+Presented by Liew Kuan Yung and Chua Bing Quan
+
+## Overview 
+
+
+
+
+
 ## 📚Dataset
 
 ### Health-Related Quality of Life
@@ -25,3 +33,5 @@ Attribution: [Centers for Disease Control and Prevention](https://catalog.data.g
 These data contain counts and rates for Centers for Infectious Diseases-related disease cases among California residents by county, disease, sex, and year spanning 2001-2014 (As of September, 2015).
 
 Attribution: [HealthData.gov](http://www.healthdata.gov/dataset/infectious-disease-cases-county-year-and-sex-2001-2014) and [CHHS Open Data](http://www.healthdata.gov/dataset/infectious-disease-cases-county-year-and-sex-2001-2014).
+
+<p></p>
