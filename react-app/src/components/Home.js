@@ -4,13 +4,20 @@ export default function Home() {
   return (
     <div style={{ marginLeft: 10, marginTop: 10 }}>
       <h1>The Impact of Quality of Life on Infectious Diseases</h1>
+      
       <p>
-        A Data Visualization project presented by Liew Kuan Yung and Chua Bing
-        Quan
+        A Data Visualization project presented by 
+        Liew Kuan Yung and Chua Bing Quan
       </p>
 
       <h2>Overview</h2>
-      <p>...</p>
+
+      <p>
+        This project is intended to analyse the relationship between rate of 
+        infectious disease and Health-Related quality of life, specifically, 
+        in California. Such information might be useful in handling situation 
+        like Covid-19.
+      </p>
 
       <h2>Datasets</h2>
 

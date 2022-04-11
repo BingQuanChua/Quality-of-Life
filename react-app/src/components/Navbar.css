@@ -19,6 +19,10 @@
   float: left;
 }
 
+/* #navbar #seperator {
+  background-color: #cccccc;
+} */
+
 #navbar li a {
   display: block;
   padding: 8px;

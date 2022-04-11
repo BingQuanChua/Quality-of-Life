@@ -17,19 +17,19 @@ export default function Navbar() {
       <div>
         <nav id="navbar">
           <ul>
-            <li>
+            <li id="seperator">
               <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/health-viz">Health Related Quality of Life</Link>
             </li>
-            <li>
+            <li id="seperator">
               <a href="/usa.html">USA Cloropleth</a>
             </li>
             <li>
               <Link to="/disease-viz">Rate of Infectious Disease</Link>
             </li>
-            <li>
+            <li id="seperator">
               <a href="/california.html">California Cloropleth</a>
             </li>
             <li>
