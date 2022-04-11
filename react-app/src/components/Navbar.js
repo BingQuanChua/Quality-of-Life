@@ -9,12 +9,13 @@ import Home from './Home';
 import QualityOfLife from './QualityOfLife/Index';
 import InfectiousDisease from './InfectiousDisease/Index';
 import CaliforniaMerged from './CaliforniaMerged/Index'
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
     <BrowserRouter>
       <div>
-        <nav>
+        <nav id="navbar">
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -28,6 +29,12 @@ export default function Navbar() {
             <li>
               <Link to="/california-viz">California Merged</Link>
             </li>
+            <li>
+              <a href="/usa.html">USA Cloropleth</a>
+            </li>
+            <li>
+              <a href="/california.html">California Map</a>
+            </li>
           </ul>
         </nav>
         <Routes> 
@@ -35,6 +42,8 @@ export default function Navbar() {
           <Route path="/health-viz" element={ <QualityOfLife /> }/>
           <Route path="/disease-viz" element={ <InfectiousDisease /> }/>
           <Route path="/california-viz" element={ <CaliforniaMerged /> }/>
+          <Route path="/usa.html"/>
+          <Route path="/california.html"/>
         </Routes>
       </div>
     </BrowserRouter>

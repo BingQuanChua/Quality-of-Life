@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>California Choropleth Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/health-viz">Health Related Quality Of Life</a>
+        </li>
+        <li>
+          <a href="/disease-viz">Infectious Disease</a>
+        </li>
+        <li>
+          <a href="/california-viz">California Merged</a>
+        </li>
+        <li>
+          <a href="/usa.html">USA Cloropleth</a>
+        </li>
+        <li>
+          <a href="/california.html">California Map</a>
+        </li>
+      </ul>
+    </div>
+    <h2 id="title">🌉Infectious Diseases in California</h2>
+    <div id="description">Disease</div>
+    <select id="qDisease">
+      <option value="Amebiasis">Amebiasis</option>
+      <option value="Anaplasmosis and Ehrlichiosis">
+        Anaplasmosis and Ehrlichiosis
+      </option>
+      <option value="Babesiosis">Babesiosis</option>
+      <option value="Cholera">Cholera</option>
+      <option value="Botulism, Other">Botulism, Other</option>
+      <option value="Botulism, Foodborne">Botulism, Foodborne</option>
+      <option value="Botulism, Wound">Botulism, Wound</option>
+      <option value="Brucellosis">Brucellosis</option>
+      <option value="Campylobacteriosis">Campylobacteriosis</option>
+      <option value="Chlamydia">Chlamydia</option>
+      <option value="Ciguatera Fish Poisoning">Ciguatera Fish Poisoning</option>
+      <option value="Dengue">Dengue</option>
+      <option value="Coccidioidomycosis">Coccidioidomycosis</option>
+      <option
+        value="Creutzfeldt-Jakob Disease and other Transmissible Spongiform Encephalopathies"
+      >
+        Creutzfeldt-Jakob Disease and other Transmissible Spongiform
+        Encephalopathies
+      </option>
+      <option value="Cryptosporidiosis">Cryptosporidiosis</option>
+      <option value="Cyclosporiasis">Cyclosporiasis</option>
+      <option value="Cysticercosis or Taeniasis">
+        Cysticercosis or Taeniasis
+      </option>
+      <option value="E. coli O157">E. coli O157</option>
+      <option value="Diphtheria">Diphtheria</option>
+      <option value="HIV">HIV</option>
+      <option value="Early Syphilis">Early Syphilis</option>
+      <option value="Gonorrhea">Gonorrhea</option>
+      <option value="E. coli Other STEC (non-O157)">
+        E. coli Other STEC (non-O157)
+      </option>
+      <option value="Giardiasis">Giardiasis</option>
+      <option value="Hantavirus Infection">Hantavirus Infection</option>
+      <option value="Hepatitis B, Acute">Hepatitis B, Acute</option>
+      <option value="Hepatitis E, acute infection">
+        Hepatitis E, acute infection
+      </option>
+      <option value="Hemolytic Uremic Syndrome">
+        Hemolytic Uremic Syndrome
+      </option>
+      <option value="Hepatitis A">Hepatitis A</option>
+      <option value="Scombroid Fish Poisoning">Scombroid Fish Poisoning</option>
+      <option value="Hepatitis C, Acute">Hepatitis C, Acute</option>
+      <option value="Invasive Meningococcal Disease">
+        Invasive Meningococcal Disease
+      </option>
+      <option value="Leprosy">Leprosy</option>
+      <option value="Measles">Measles</option>
+      <option value="Leptospirosis">Leptospirosis</option>
+      <option value="Influenza Death (<65 years of age)">
+        Influenza Death (less than 65 years of age)
+      </option>
+      <option value="Legionellosis">Legionellosis</option>
+      <option value="Malaria">Malaria</option>
+      <option value="Lyme Disease">Lyme Disease</option>
+      <option value="Listeriosis">Listeriosis</option>
+      <option value="Pertussis">Pertussis</option>
+      <option value="Paralytic Shellfish Poisoning">
+        Paralytic Shellfish Poisoning
+      </option>
+      <option value="Psittacosis">Psittacosis</option>
+      <option value="Rabies, human">Rabies, human</option>
+      <option value="Mumps">Mumps</option>
+      <option value="Q Fever">Q Fever</option>
+      <option value="Relapsing Fever">Relapsing Fever</option>
+      <option value="Plague, human">Plague, human</option>
+      <option value="Rubella">Rubella</option>
+      <option value="Salmonellosis">Salmonellosis</option>
+      <option value="Tetanus">Tetanus</option>
+      <option value="Shiga Toxin Positive Feces (without culture confirmation)">
+        Shiga Toxin Positive Feces (without culture confirmation)
+      </option>
+      <option value="Shigellosis">Shigellosis</option>
+      <option value="Spotted Fever Rickettsiosis">
+        Spotted Fever Rickettsiosis
+      </option>
+      <option
+        value="Staphylococcus aureus Infection (cases resulting in death or ICU)"
+      >
+        Staphylococcus aureus Infection (cases resulting in death or ICU)
+      </option>
+      <option value="Streptococcal Infection (cases in food and dairy workers)">
+        Streptococcal Infection (cases in food and dairy workers)
+      </option>
+      <option value="Tuberculosis">Tuberculosis</option>
+      <option value="Toxic Shock Syndrome (Non-Streptococcal)">
+        Toxic Shock Syndrome (Non-Streptococcal)
+      </option>
+      <option value="Vibrio Infection (non-Cholera)">
+        Vibrio Infection (non-Cholera)
+      </option>
+      <option value="Trichinosis">Trichinosis</option>
+      <option value="Tularemia">Tularemia</option>
+      <option value="Typhoid Fever, case">Typhoid Fever, case</option>
+      <option value="Varicella Hospitalizations">
+        Varicella Hospitalizations
+      </option>
+      <option value="Typhus Fever">Typhus Fever</option>
+      <option value="Yersiniosis">Yersiniosis</option>
+    </select>
+    Year
+    <select id="qYear">
+      <option>2014</option>
+      <option>2013</option>
+      <option>2012</option>
+      <option>2011</option>
+      <option>2010</option>
+      <option>2009</option>
+      <option>2008</option>
+      <option>2007</option>
+      <option>2006</option>
+      <option>2005</option>
+      <option>2004</option>
+      <option>2003</option>
+      <option>2002</option>
+      <option>2001</option>
+    </select>
+    <svg id="canvas"></svg>
+    <script>
+      let canvas = d3.select("#canvas");
+
+      // color
+      var color = d3
+        .scaleLinear()
+        .range(["	#f9d186", "#e19506"])
+        .interpolate(d3.interpolateLab);
+
+      // div for the tooltip
+      var tooltip = d3
+        .select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .attr("id", "tooltip")
+        .style("opacity", 0);
+
+      // draw the map!
+      function drawMap() {
+        smallest_value = Math.floor(d3.min(displayingValues));
+
+        canvas
+          .selectAll("path")
+          .data(californiaData)
+          .enter()
+          .append("path")
+          .attr("d", d3.geoPath())
+          .attr("transform", "translate(350,-300) scale(2.2,2.2)")
+          .attr("class", "state")
+          .attr("stroke-width", "200") // not working? :(
+          .on("mouseover", function (event, countyDataItem) {
+            tooltip
+              .transition()
+              .style("visibility", "visible")
+              .style("opacity", 0.95)
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY - 28 + "px");
+
+            let countyname = countyDataItem["properties"]["name"];
+            let countyObj = diseaseDataSubset.find(function (item) {
+              return item["County"] === countyname;
+            });
+            let count = countyObj["Count"];
+            let population = countyObj["Population"];
+            let rate = countyObj["Rate"];
+            tooltip.html(
+              `<strong>${countyname}</strong>` +
+                `<div>Rate: ${rate} (per 100k population) </div>` +
+                `<div>Population: ${population}</div>` +
+                `<div>Count: ${count}</div>`
+            );
+          })
+          .on("mouseout", function (event, countyDataItem) {
+            tooltip.transition().style("visibility", "hidden");
+          })
+          .attr("fill", function (countyDataItem) {
+            let countyname = countyDataItem["properties"]["name"];
+            let countyObj = diseaseDataSubset.find(function (item) {
+              return item["County"] === countyname;
+            });
+            let value = countyObj["Rate"];
+            return color(value - smallest_value);
+          })
+          .attr("county", function (countyDataItem) {
+            return countyDataItem["properties"]["name"];
+          });
+      }
+
+      var countyData; // data for drawing counties
+      var californiaData; // data for drawing california counties
+
+      var diseaseData; // infectious disease csv data
+      var diseaseDataSubset; // subset of disease data
+
+      var selectedDisease; // selected infectious disease type
+      var selectedYear; // selected year
+      var displayingValues = []; // list of displaying values
+
+      var smallest_value;
+
+      // loading data
+      d3.json("./topojson/counties-albers-10m.json").then(function (
+        data,
+        error
+      ) {
+        if (error) {
+          console.log(log);
+        } else {
+          // converts topojson into geojson format
+          countyData = topojson.feature(data, data.objects.counties).features;
+
+          // california county fips code (from california-fips.csv)
+          californiaCountyList = [
+            "06001",
+            "06003",
+            "06005",
+            "06007",
+            "06009",
+            "06011",
+            "06013",
+            "06015",
+            "06017",
+            "06019",
+            "06021",
+            "06023",
+            "06025",
+            "06027",
+            "06029",
+            "06031",
+            "06033",
+            "06035",
+            "06037",
+            "06039",
+            "06041",
+            "06043",
+            "06045",
+            "06047",
+            "06049",
+            "06051",
+            "06053",
+            "06055",
+            "06057",
+            "06059",
+            "06061",
+            "06063",
+            "06065",
+            "06067",
+            "06069",
+            "06071",
+            "06073",
+            "06075",
+            "06077",
+            "06079",
+            "06081",
+            "06083",
+            "06085",
+            "06087",
+            "06089",
+            "06091",
+            "06093",
+            "06095",
+            "06097",
+            "06099",
+            "06101",
+            "06103",
+            "06105",
+            "06107",
+            "06109",
+            "06111",
+            "06113",
+            "06115",
+          ];
+
+          // california in geojson
+          californiaData = [];
+          for (var i = 0; i < Object.keys(countyData).length; i++) {
+            if (californiaCountyList.includes(countyData[i]["id"])) {
+              californiaData.push(countyData[i]);
+            }
+          }
+
+          d3.csv("./infectious-disease-2001-2014/rows.csv").then(
+            function (data, error) {
+              if (error) {
+                console.log(log);
+              } else {
+                diseaseData = data;
+
+                // initial state
+                selectedDisease = "Amebiasis";
+                selectedYear = "2014";
+
+                diseaseDataSubset = diseaseData.filter(function (item) {
+                  return (
+                    item["County"] !== "California" &&
+                    item["Disease"] === selectedDisease &&
+                    item["Year"] === selectedYear &&
+                    item["Sex"] === "Total" // both female and male
+                  );
+                });
+
+                displayingValues = []; // resets
+                diseaseDataSubset.forEach(function (d) {
+                  displayingValues.push(+d.Rate);
+                });
+
+                drawlegend();
+                drawMap();
+              }
+            }
+          );
+        }
+      });
+
+      // drop down selection (disease)
+      d3.select("#qDisease").on("change", function (event, d) {
+        d3.selectAll("path").remove();
+        d3.selectAll("rect").remove();
+        d3.selectAll("text").remove();
+        d3.selectAll("g").remove();
+        selectedDisease = document.getElementById("qDisease").value;
+
+        diseaseDataSubset = diseaseData.filter(function (item) {
+          return (
+            item["County"] !== "California" &&
+            item["Disease"] === selectedDisease &&
+            item["Year"] === selectedYear &&
+            item["Sex"] === "Total" // both female and male
+          );
+        });
+
+        displayingValues = []; // resets
+        diseaseDataSubset.forEach(function (d) {
+          displayingValues.push(+d.Rate);
+        });
+
+        drawlegend();
+        drawMap();
+      });
+
+      // drop down selection (year)
+      d3.select("#qYear").on("change", function (event, d) {
+        d3.selectAll("path").remove();
+        d3.selectAll("rect").remove();
+        d3.selectAll("text").remove();
+        d3.selectAll("g").remove();
+        selectedYear = document.getElementById("qYear").value;
+
+        diseaseDataSubset = diseaseData.filter(function (item) {
+          return (
+            item["Disease"] === selectedDisease &&
+            item["Year"] === selectedYear &&
+            item["Sex"] === "Total" // both female and male
+          );
+        });
+
+        displayingValues = []; // resets
+        diseaseDataSubset.forEach(function (d) {
+          displayingValues.push(+d.Rate);
+        });
+
+        drawlegend();
+        drawMap();
+      });
+
+      // function to draw and set legend
+      function drawlegend() {
+        var legend_width = 200,
+          divisions = 100;
+        smallest_value = Math.floor(d3.min(displayingValues));
+        var largest_value = Math.floor(d3.max(displayingValues));
+
+        var newData = []; // to int data step
+        if (largest_value == smallest_value) {
+          newData.push(largest_value);
+        } else {
+          for (var i = smallest_value; i < largest_value; i += 0.5) {
+            newData.push(i);
+          }
+        }
+        var sectionWidth = Math.floor(120 / newData.length) * 2;
+
+        var legend = canvas
+          .append("g")
+          .attr("width", 400)
+          .attr("length", 400)
+          .attr("class", "legend")
+          .attr("transform", "translate(680,60)");
+
+        legend
+          .selectAll("rect")
+          .data(newData)
+          .enter()
+          .append("rect")
+          .attr("x", function (d) {
+            return (d - smallest_value) * sectionWidth;
+          })
+          .attr("y", 10)
+          .attr("height", 15)
+          .attr("width", sectionWidth / 2)
+          .attr("fill", function (d) {
+            return color(d - smallest_value);
+          });
+
+        if (largest_value != smallest_value) {
+          legend
+            .append("text")
+            .text(function () {
+              return d3.min(newData);
+            })
+            .attr("transform", "translate(0,0)")
+            .style("font-size", "13px");
+          legend
+            .append("text")
+            .text(function () {
+              return d3.max(newData) + "+";
+            })
+            .attr("transform", "translate(100,0)")
+            .style("font-size", "13px");
+        } else {
+          legend
+            .append("text")
+            .text("No data")
+            .attr("transform", "translate(40,0)")
+            .style("font-size", "13px");
+        }
+        legend
+          .append("text")
+          .text("Rate")
+          .attr("transform", "translate(50,50)")
+          .style("font-size", "13px");
+      }
+    </script>
+  </body>
+</html>
