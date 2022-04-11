@@ -1,7 +1,6 @@
 /* Navigation bar */
 
 #navbar nav {
-  /* margin-bottom: 20; */
   margin: 0;
   position: relative;
   overflow: hidden;
@@ -24,4 +23,4 @@
   display: block;
   padding: 8px;
   float: none;
-}
+} 

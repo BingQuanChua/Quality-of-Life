@@ -32,46 +32,46 @@ export default function PieRecharts ({year, question}) {
   return (
     <div>
       <PieChart width={200} height={200} margin={{
-            top: 0,
-            right: 0,
-            left: 0,
-            bottom: 0,
-          }}>
-          <Pie
-            dataKey="Data_Value"
-            isAnimationActive={false}
-            startAngle={180}
-            endAngle={0}
-            data={data_QOL_YQB[year][question]['Age_Group']}
-            cx="50%"
-            cy="50%"
-            labelLine={false}
-            label={renderCustomizedLabel}
-            outerRadius={90}
-            fill="#8884d8"
-          >
-            {data_QOL_YQB[year][question]['Age_Group'].map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={color_age[index]} />
-            ))}
-          </Pie>
-          <Pie
-            dataKey="Data_Value"
-            isAnimationActive={false}
-            startAngle={180}
-            endAngle={360}
-            data={data_QOL_YQB[year][question]['Gender']}
-            labelLine={false}
-            label={renderCustomizedLabel}
-            cx="50%"
-            cy="50%"
-            outerRadius={80}
-            fill="#0084d8"
-          >
-            {data_QOL_YQB[year][question]['Gender'].map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={color_gender[index]} />
-            ))}
-          </Pie>
-        </PieChart>
+        top: 0,
+        right: 0,
+        left: 0,
+        bottom: 0,
+      }}>
+        <Pie
+          dataKey="Data_Value"
+          isAnimationActive={false}
+          startAngle={180}
+          endAngle={0}
+          data={data_QOL_YQB[year][question]['Age_Group']}
+          cx="50%"
+          cy="50%"
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={90}
+          fill="#8884d8"
+        >
+          {data_QOL_YQB[year][question]['Age_Group'].map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={color_age[index]} />
+          ))}
+        </Pie>
+        <Pie
+          dataKey="Data_Value"
+          isAnimationActive={false}
+          startAngle={180}
+          endAngle={360}
+          data={data_QOL_YQB[year][question]['Gender']}
+          labelLine={false}
+          label={renderCustomizedLabel}
+          cx="50%"
+          cy="50%"
+          outerRadius={80}
+          fill="#0084d8"
+        >
+          {data_QOL_YQB[year][question]['Gender'].map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={color_gender[index]} />
+          ))}
+        </Pie>
+      </PieChart>
     </div>
   )
 
