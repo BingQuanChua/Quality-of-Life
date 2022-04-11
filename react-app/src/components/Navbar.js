@@ -21,19 +21,19 @@ export default function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/health-viz">Health Related Quality Of Life</Link>
-            </li>
-            <li>
-              <Link to="/disease-viz">Infectious Disease</Link>
-            </li>
-            <li>
-              <Link to="/california-viz">California Merged</Link>
+              <Link to="/health-viz">Health Related Quality of Life</Link>
             </li>
             <li>
               <a href="/usa.html">USA Cloropleth</a>
             </li>
             <li>
-              <a href="/california.html">California Map</a>
+              <Link to="/disease-viz">Rate of Infectious Disease</Link>
+            </li>
+            <li>
+              <a href="/california.html">California Cloropleth</a>
+            </li>
+            <li>
+              <Link to="/california-viz">Rate of Infectious Disease vs Quality of Life</Link>
             </li>
           </ul>
         </nav>

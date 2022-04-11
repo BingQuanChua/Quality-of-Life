@@ -2,17 +2,21 @@
 
 # The Impact of Quality of Life on Infectious Diseases
 
-Presented by Liew Kuan Yung and Chua Bing Quan
+## Description
 
-## Overview 
-
-
-
-
+* This project is intended to analyse the relationship between rate of infectious disease and Health-Related quality of life, specifically, in California. 
+- Explain a bit why is this important?
+	- How this data might be useful in handling situation like Covid-19
+	- To learn more about 
+* Overview of today's presentation?
+- Dataset introduction
+- Simple EDA
+- Correlation (interesting patterns)
+- Conclusion
 
 ## 📚Dataset
 
-### Health-Related Quality of Life
+### Health-Related Quality of Life (1993 - 2010)
 
 📖https://data.world/health/health-related-quality-of-life
 
@@ -26,7 +30,7 @@ A compact set of [HRQOL measures](http://www.cdc.gov/hrqol/methods.htm) includin
 
 Attribution: [Centers for Disease Control and Prevention](https://catalog.data.gov/dataset/behavioral-risk-factor-data-health-related-quality-of-life-hrqol-76ea6).
 
-### Infectious Disease 2001-2014
+### Infectious Disease (2001-2014)
 
 📖https://data.world/health/infectious-disease-2001-2014
 
