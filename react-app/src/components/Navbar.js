@@ -8,7 +8,7 @@ import {
 import Home from './Home';
 import QualityOfLife from './QualityOfLife/Index';
 import InfectiousDisease from './InfectiousDisease/Index';
-import CaliforniaMerged from './CaliforniaMerged/Index'
+import CaliforniaMerged from './CaliforniaMerged/Index';
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -42,7 +42,6 @@ export default function Navbar() {
           <Route path="/health-viz" element={ <QualityOfLife /> }/>
           <Route path="/disease-viz" element={ <InfectiousDisease /> }/>
           <Route path="/california-viz" element={ <CaliforniaMerged /> }/>
-          <Route path="/usa.html"/>
           <Route path="/california.html"/>
         </Routes>
       </div>
