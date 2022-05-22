@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav id="navbar">
           <ul>
             <li id="seperator">
-              <Link to="/">Home</Link>
+              <Link to="/quality-of-life">Home</Link>
             </li>
             <li>
               <Link to="/health-viz">Health Related Quality of Life</Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <Routes> 
-          <Route exact path="/" element={<Home />} /> 
+          <Route exact path="/quality-of-life" element={<Home />} /> 
           <Route path="/health-viz" element={ <QualityOfLife /> }/>
           <Route path="/disease-viz" element={ <InfectiousDisease /> }/>
           <Route path="/california-viz" element={ <CaliforniaMerged /> }/>
