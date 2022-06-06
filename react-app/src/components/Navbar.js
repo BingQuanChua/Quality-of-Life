@@ -24,13 +24,13 @@ export default function Navbar() {
               <Link to="/health-viz">Health Related Quality of Life</Link>
             </li>
             <li id="seperator">
-              <a href="/usa.html">USA Cloropleth</a>
+              <a href="/usa.html">USA Choropleth</a>
             </li>
             <li>
               <Link to="/disease-viz">Rate of Infectious Disease</Link>
             </li>
             <li id="seperator">
-              <a href="/california.html">California Cloropleth</a>
+              <a href="/california.html">California Choropleth</a>
             </li>
             <li>
               <Link to="/california-viz">Rate of Infectious Disease vs Quality of Life</Link>
