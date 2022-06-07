@@ -18,19 +18,19 @@ export default function Navbar() {
         <nav id="navbar">
           <ul>
             <li id="seperator">
-              <Link to="/quality-of-life">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/health-viz">Health Related Quality of Life</Link>
             </li>
             <li id="seperator">
-              <a href="/usa.html">USA Choropleth</a>
+              <a href="/usa.html">USA Cloropleth</a>
             </li>
             <li>
               <Link to="/disease-viz">Rate of Infectious Disease</Link>
             </li>
             <li id="seperator">
-              <a href="/california.html">California Choropleth</a>
+              <a href="/california.html">California Cloropleth</a>
             </li>
             <li>
               <Link to="/california-viz">Rate of Infectious Disease vs Quality of Life</Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <Routes> 
-          <Route exact path="/quality-of-life" element={<Home />} /> 
+          <Route exact path="/" element={<Home />} /> 
           <Route path="/health-viz" element={ <QualityOfLife /> }/>
           <Route path="/disease-viz" element={ <InfectiousDisease /> }/>
           <Route path="/california-viz" element={ <CaliforniaMerged /> }/>
