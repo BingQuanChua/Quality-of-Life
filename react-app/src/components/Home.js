@@ -14,8 +14,8 @@ export default function Home() {
 
       <p>
         This project is intended to analyse the relationship between rate of 
-        infectious disease and Health-Related quality of life, specifically, 
-        in California. Such information might be useful in handling situation 
+        infectious disease and health-related quality of life, specifically, 
+        in California. <br></br>Such information might be useful in handling situation 
         like Covid-19.
       </p>
 
@@ -40,7 +40,7 @@ export default function Home() {
       </h3>
       <p>
         Data are from the Behavioral Risk Factor Surveillance System (BRFSS).
-        All respondents to the BRFSS are non-institutionalized adults, 18 years
+        <br></br>All respondents to the BRFSS are non-institutionalized adults, 18 years
         old or older. <strong>1993-2010</strong>
       </p>
 
@@ -98,7 +98,7 @@ export default function Home() {
 
       <p>
         These data contain counts and rates for Centers for Infectious
-        Diseases-related disease cases among California residents by county,
+        Diseases-related disease cases among California residents <br></br>by county,
         disease, sex, and year spanning <strong>2001-2014</strong> (As of September, 2015).
       </p>
       <div>
@@ -120,6 +120,8 @@ export default function Home() {
           </thead>
         </table>
       </div>
+      <br></br>
+      <br></br>
       <br></br>
     </div>
   );

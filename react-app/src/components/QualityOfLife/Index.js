@@ -46,14 +46,14 @@ export default function QualityOfLife() {
                 label="Question"
                 onChange={handleChange}
               >
-                <MenuItem value={"Mean_days_of_activity_limitation"}>Mean_days_of_activity_limitation</MenuItem>
-                <MenuItem value={"Mean_mentally_unhealthy_days"}>Mean_mentally_unhealthy_days</MenuItem>
-                <MenuItem value={"Mean_physically_or_mentally_unhealthy_days"}>Mean_physically_or_mentally_unhealthy_days</MenuItem>
-                <MenuItem value={"Mean_physically_unhealthy_days"}>Mean_physically_unhealthy_days</MenuItem>
-                <MenuItem value={"Percentage_with_14_or_more_activity_limitation_days"}>Percentage_with_14_or_more_activity_limitation_days</MenuItem>
-                <MenuItem value={"Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)"}>Percentage_with_14_or_more_mentally_unhealthy_days_</MenuItem>
-                <MenuItem value={"Percentage_with_14_or_more_physically_unhealthy_days"}>Percentage_with_14_or_more_physically_unhealthy_days</MenuItem>
-                <MenuItem value={"Percentage_with_fair_or_poor_self-rated_health"}>Percentage_with_fair_or_poor_self-rated_health</MenuItem>
+                <MenuItem value={"Mean_days_of_activity_limitation"}>Mean days of activity limitation</MenuItem>
+                <MenuItem value={"Mean_mentally_unhealthy_days"}>Mean mentally unhealthy days</MenuItem>
+                <MenuItem value={"Mean_physically_or_mentally_unhealthy_days"}>Mean physically or mentally unhealthy days</MenuItem>
+                <MenuItem value={"Mean_physically_unhealthy_days"}>Mean physically unhealthy days</MenuItem>
+                <MenuItem value={"Percentage_with_14_or_more_activity_limitation_days"}>Percentage with 14 or more activity limitation days</MenuItem>
+                <MenuItem value={"Percentage_with_14_or_more_mentally_unhealthy_days_(Frequent_Mental_Distress)"}>Percentage with 14 or more mentally unhealthy days</MenuItem>
+                <MenuItem value={"Percentage_with_14_or_more_physically_unhealthy_days"}>Percentage with 14 or more physically unhealthy days</MenuItem>
+                <MenuItem value={"Percentage_with_fair_or_poor_self-rated_health"}>Percentage with fair or poor self-rated health</MenuItem>
               </Select>
             </FormControl>
           </Box>
