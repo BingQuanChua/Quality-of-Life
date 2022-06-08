@@ -56,6 +56,10 @@ export default function QualityOfLife() {
           />
         </Grid>
       </Grid>
+      <Grid item xs={12}>
+        <br></br>    
+        <br></br>    
+      </Grid>
     </Box>
   );
 }
