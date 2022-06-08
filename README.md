@@ -2,17 +2,7 @@
 
 # The Impact of Quality of Life on Infectious Diseases
 
-## Description
-
-* This project is intended to analyse the relationship between rate of infectious disease and Health-Related quality of life, specifically, in California. 
-- Explain a bit why is this important?
-	- How this data might be useful in handling situation like Covid-19
-	- To learn more about 
-* Overview of today's presentation?
-- Dataset introduction
-- Simple EDA
-- Correlation (interesting patterns)
-- Conclusion
+This project is intended to analyse the relationship between rate of infectious disease and Health-Related quality of life, specifically, in California. 
 
 ## 📚Dataset
 
@@ -38,4 +28,43 @@ These data contain counts and rates for Centers for Infectious Diseases-related 
 
 Attribution: [HealthData.gov](http://www.healthdata.gov/dataset/infectious-disease-cases-county-year-and-sex-2001-2014) and [CHHS Open Data](http://www.healthdata.gov/dataset/infectious-disease-cases-county-year-and-sex-2001-2014).
 
-<p></p>
+## 🌱Deployment
+
+The webpage is written using D3.js and React.js.
+
+Check out our [project page](https://quality-of-life.netlify.app/) hosted on Netlify! 
+
+📸Screenshots:
+
+<img src="img/overview.gif">
+<p align="center"> Webpage Overview </p>
+
+<br>
+
+<img src="img/quality-of-life.gif">
+<p align="center"> Health Related Quality of Life Chart and Pie Chart</p>
+
+<br>
+
+<img src="img/us.gif">
+
+<p align="center"> Health Related Quality of Life USA Choropleth Map </p>
+
+<br>
+
+<img src="img/rate.gif">
+
+<p align="center"> Rate of Infectious Diseases in California</p>
+
+<br>
+
+<img src="img/california.gif">
+
+<p align="center"> Infectious Diseases California Choropleth Map </p>
+
+<br>
+
+<img src="img/rate-vs-quality.gif">
+<p align="center"> Interesting Patterns Found </p>
+
+<br>
