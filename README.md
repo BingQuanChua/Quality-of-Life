@@ -2,7 +2,7 @@
 
 # The Impact of Quality of Life on Infectious Diseases
 
-This project is intended to analyse the relationship between rate of infectious disease and Health-Related quality of life, specifically, in California. 
+This project intends to analyse the relationship between rate of infectious disease and health-related quality of life, specifically, in California. 
 
 ## 📚Dataset
 
@@ -30,11 +30,11 @@ Attribution: [HealthData.gov](http://www.healthdata.gov/dataset/infectious-disea
 
 ## 🌱Deployment
 
-The webpage is written using D3.js and React.js.
+The webpage is written using React and D3.js.
 
 Check out our [project page](https://quality-of-life.netlify.app/) hosted on Netlify! 
 
-📸Screenshots:
+📸Project Screenshots:
 
 <img src="img/overview.gif">
 <p align="center"> Webpage Overview </p>
@@ -42,13 +42,14 @@ Check out our [project page](https://quality-of-life.netlify.app/) hosted on Net
 <br>
 
 <img src="img/quality-of-life.gif">
-<p align="center"> Health Related Quality of Life Chart and Pie Chart</p>
+
+<p align="center"> Health Related Quality of Life in USA, shown using Line Chart and Pie Chart</p>
 
 <br>
 
 <img src="img/us.gif">
 
-<p align="center"> Health Related Quality of Life USA Choropleth Map </p>
+<p align="center"> USA Choropleth Map showing Quality of Life </p>
 
 <br>
 
@@ -60,11 +61,10 @@ Check out our [project page](https://quality-of-life.netlify.app/) hosted on Net
 
 <img src="img/california.gif">
 
-<p align="center"> Infectious Diseases California Choropleth Map </p>
+<p align="center"> California Choropleth Map revealing the rate of Infectious Diseases over the years </p>
 
 <br>
 
 <img src="img/rate-vs-quality.gif">
-<p align="center"> Interesting Patterns Found </p>
 
-<br>
+<p align="center"> Interesting Patterns Discovered </p>
